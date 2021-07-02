@@ -1,0 +1,9 @@
+.\objects\hal_flash.o: ..\HAL_lib\src\HAL_flash.c
+.\objects\hal_flash.o: ..\HAL_lib\inc\HAL_flash.h
+.\objects\hal_flash.o: ..\Include\HAL_device.h
+.\objects\hal_flash.o: ..\Include\MM32SPIN2xx_p.h
+.\objects\hal_flash.o: ..\CORE\core_cm0.h
+.\objects\hal_flash.o: F:\software\MDK5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\hal_flash.o: ..\CORE\core_cmInstr.h
+.\objects\hal_flash.o: ..\CORE\core_cmFunc.h
+.\objects\hal_flash.o: ..\Include\system_MM32SPIN2xx_p.h

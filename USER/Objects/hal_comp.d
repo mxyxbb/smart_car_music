@@ -1,0 +1,9 @@
+.\objects\hal_comp.o: ..\HAL_lib\src\HAL_comp.c
+.\objects\hal_comp.o: ..\HAL_lib\inc\HAL_comp.h
+.\objects\hal_comp.o: ..\Include\HAL_device.h
+.\objects\hal_comp.o: ..\Include\MM32SPIN2xx_p.h
+.\objects\hal_comp.o: ..\CORE\core_cm0.h
+.\objects\hal_comp.o: F:\software\MDK5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\hal_comp.o: ..\CORE\core_cmInstr.h
+.\objects\hal_comp.o: ..\CORE\core_cmFunc.h
+.\objects\hal_comp.o: ..\Include\system_MM32SPIN2xx_p.h

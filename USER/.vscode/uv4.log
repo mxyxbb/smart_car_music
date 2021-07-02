@@ -1,0 +1,7 @@
+Load "..\\OBJ\\Template.axf" 
+Include "d:\\shared documents\\prj\\飞卡\\直立0623-4直立继续调\\USER\\JLinkSettings.ini" 
+[BREAKPOINTS]
+^
+*** error 10: Syntax error
+Erase Done.Programming Done.Verify OK.Application running ...
+Flash Load finished at 23:08:30

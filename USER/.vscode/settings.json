@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "shell_port.h": "c",
+        "balance.h": "c"
+    }
+}

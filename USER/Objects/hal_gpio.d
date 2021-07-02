@@ -1,0 +1,10 @@
+.\objects\hal_gpio.o: ..\HAL_lib\src\HAL_gpio.c
+.\objects\hal_gpio.o: ..\HAL_lib\inc\HAL_gpio.h
+.\objects\hal_gpio.o: ..\Include\HAL_device.h
+.\objects\hal_gpio.o: ..\Include\MM32SPIN2xx_p.h
+.\objects\hal_gpio.o: ..\CORE\core_cm0.h
+.\objects\hal_gpio.o: F:\software\MDK5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\hal_gpio.o: ..\CORE\core_cmInstr.h
+.\objects\hal_gpio.o: ..\CORE\core_cmFunc.h
+.\objects\hal_gpio.o: ..\Include\system_MM32SPIN2xx_p.h
+.\objects\hal_gpio.o: ..\HAL_lib\inc\HAL_rcc.h
