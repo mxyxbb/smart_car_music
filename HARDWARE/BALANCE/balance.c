@@ -7,7 +7,7 @@
 #define MAXPWM 800
 
 // float ZHONGZHI=-43;//heavy block, debug block, and battary inside [MPU1]
-float ZHONGZHI=-64;//heavy block, debug block, and battary inside [MPU2]
+float ZHONGZHI=-73;//heavy block, debug block, and battary inside [MPU2]
 
 
 // float Balance_Kp=-60,Balance_Kd=0.05,Velocity_Kp=0.9,Velocity_Ki=0.02;//ok parameter 2021/06/23-7:14
@@ -24,7 +24,7 @@ float Balance_Kp=-30,Balance_Kd=-0.72,Velocity_Kp=0.3,Velocity_Ki=0.01;//[for st
 
 int motor1,motor2;
 
-float maxueyang_speed=0;//100;
+float maxueyang_speed=2000;//100;
 char Flag_Stop;
 char Flag_Qian=0;
 int Turn_Target=2;
@@ -41,7 +41,7 @@ int balance()
 	 return Balance;
 }
 
-float Encoder_Integral;
+volatile float Encoder_Integral;
 int velocity(int encoder_left,int encoder_right)
 {  
     static float Velocity,Encoder_Least,Encoder,Movement;
@@ -51,8 +51,8 @@ int velocity(int encoder_left,int encoder_right)
 		Encoder += Encoder_Least*0.2;	                                    
 		Encoder_Integral +=Encoder;                                      
 		Encoder_Integral=Encoder_Integral-Movement;                       
-		if(Encoder_Integral>6000)  	Encoder_Integral=6000;   // 3000 fine          
-		if(Encoder_Integral<-6000)	Encoder_Integral=-6000;              
+		if(Encoder_Integral>20000)  	Encoder_Integral=20000;   // 3000 fine          
+		if(Encoder_Integral<-20000)	Encoder_Integral=-20000;              
 		Velocity=Encoder*Velocity_Kp+Encoder_Integral*Velocity_Ki;        
 		if(Flag_Stop==1)   Encoder_Integral=0;      
 

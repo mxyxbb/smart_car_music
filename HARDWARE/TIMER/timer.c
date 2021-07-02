@@ -155,7 +155,7 @@ void TIM16_IRQHandler(void)
 				{
 					pwm2=velocity(left_encoder_puslse,right_encoder_puslse); // [velocity loop]
 					// pwm3=turn(left_encoder_puslse,right_encoder_puslse);
-					pwm3=-20;
+					pwm3=-5;
 				}
 				else// the car has not stood up, [turn off] the [velocity loop], avoid flying.
 				{

@@ -9,7 +9,7 @@ int turn(int encoder_left,int encoder_right);
 extern char Flag_Stop;
 extern float Balance_Kp,Balance_Kd,Velocity_Kp,Velocity_Ki;//ok parameter 2021/06/23-11:13
 extern float maxueyang_speed;
-extern float Encoder_Integral;
+extern volatile float Encoder_Integral;
 #endif 
 
 
