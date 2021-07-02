@@ -34,6 +34,8 @@ int main(void)
   {
 		ANO_DT_Data_Exchange();
 		delayms(1);
+//		sprintf(str_main, "C1:%5f", Encoder_Integral); 
+//    TFTSPI_P8X16Str(1, 1, str_main, u16PURPLE, u16BLACK);   // ×Ö·û´®ÏÔÊ¾
 //		start_or_stop();
   }
 	
