@@ -30,13 +30,16 @@ int main(void)
 	beep_briefly_on();
 	TIMER_InitConfig(TIMER_16, 10);//定时器16每隔10ms进入一次中断
 	
+//	Test_ADC1();
+	
 	while (1)
   {
 		ANO_DT_Data_Exchange();
 		delayms(1);
-//		sprintf(str_main, "C1:%5f", Encoder_Integral); 
+//		sprintf(str_main, "err:%5d", motor1); 
 //    TFTSPI_P8X16Str(1, 1, str_main, u16PURPLE, u16BLACK);   // 字符串显示
 //		start_or_stop();
+		
   }
 	
 }

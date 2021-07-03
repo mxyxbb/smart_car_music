@@ -7,8 +7,6 @@ extern int left_encoder_puslse ;
 extern int right_encoder_puslse ;
 extern int sum_left_speed;
 extern int sum_right_speed;
-extern int adc_left;
-extern int adc_right;
 extern int adc_left_level;
 extern int adc_left_vertical;
 extern int adc_right_level;

@@ -103,11 +103,11 @@ float KalmanFilter(float inData)
 	prevData = inData;
 	return inData;                                             //·µ»Ø¹À¼ÆÖµ
 }
-
+double error = 0;
 void cacl_error_1(void)
 {
 	char str[20];
-	static double error = 0, last_error = 0;
+	static double last_error = 0;
 	double adc_left_sqrt = 0;
 	double adc_right_sqrt = 0;
 	adc_left_sqrt = sqrt(adc_left);

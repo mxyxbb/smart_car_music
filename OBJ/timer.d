@@ -50,3 +50,5 @@
 ..\obj\timer.o: ..\HARDWARE\BUZZER\mymath.h
 ..\obj\timer.o: ..\HARDWARE\multi_button/multi_button.h
 ..\obj\timer.o: ..\HARDWARE\BALANCE/balance.h
+..\obj\timer.o: ..\HARDWARE\hellodata/hellodata.h
+..\obj\timer.o: ..\Include\MM32SPIN2xx_p.h

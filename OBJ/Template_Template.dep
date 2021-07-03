@@ -1,6 +1,6 @@
 Dependencies for Project 'Template', Target 'Template': (DO NOT MODIFY !)
-F (.\main.c)(0x60DED625)(--c99 -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\HAL_lib\inc -I ..\Include -I ..\HARDWARE -I ..\HARDWARE\encoder -I ..\HARDWARE\OLED -I ..\HARDWARE\LCD -I ..\STARTUP -I ..\HARDWARE\MOTOR -I ..\HARDWARE\TIMER -I ..\HARDWARE\ADC -I ..\HARDWARE\TRACE -I ..\HARDWARE\SPEEDCONTROL -I ..\HARDWARE\BLUETOOTH -I ..\HARDWARE\GPIO -I ..\HARDWARE\MPU9250 -I ..\HARDWARE\UART -I ..\letter_shell\src -I ..\HARDWARE\BUZZER-I.\RTE\_Template-I"D:\Program Files\Keil_v5\ARM\CMSIS\Include"-D__UVISION_VERSION="527"-o ..\obj\main.o --omf_browse ..\obj\main.crf --depend ..\obj\main.d)
-I (..\HARDWARE\include.h)(0x60CE373F)
+F (.\main.c)(0x60E03BB7)(--c99 -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\HAL_lib\inc -I ..\Include -I ..\HARDWARE -I ..\HARDWARE\encoder -I ..\HARDWARE\OLED -I ..\HARDWARE\LCD -I ..\STARTUP -I ..\HARDWARE\MOTOR -I ..\HARDWARE\TIMER -I ..\HARDWARE\ADC -I ..\HARDWARE\TRACE -I ..\HARDWARE\SPEEDCONTROL -I ..\HARDWARE\BLUETOOTH -I ..\HARDWARE\GPIO -I ..\HARDWARE\MPU9250 -I ..\HARDWARE\UART -I ..\letter_shell\src -I ..\HARDWARE\BUZZER-I.\RTE\_Template-I"D:\Program Files\Keil_v5\ARM\CMSIS\Include"-D__UVISION_VERSION="527"-o ..\obj\main.o --omf_browse ..\obj\main.crf --depend ..\obj\main.d)
+I (..\HARDWARE\include.h)(0x60E01585)
 I (D:\Program Files\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x60CB57FD)
 I (D:\Program Files\Keil_v5\ARM\ARMCC\include\string.h)(0x599ECD2C)
 I (D:\Program Files\Keil_v5\ARM\ARMCC\include\math.h)(0x599ECD2E)
@@ -37,11 +37,11 @@ I (..\HARDWARE\encoder\encoder.h)(0x608BF66A)
 I (..\HARDWARE\LCD\lcd.h)(0x605DE50D)
 I (D:\Program Files\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
 I (..\STARTUP\sys.h)(0x5FE72F3C)
-I (..\HARDWARE\TIMER\timer.h)(0x60D24961)
-I (..\HARDWARE\ADC\adc.h)(0x60694D40)
+I (..\HARDWARE\TIMER\timer.h)(0x60E01FE9)
+I (..\HARDWARE\ADC\adc.h)(0x60E01F9D)
 I (..\HARDWARE\TRACE\trace.h)(0x60C45647)
-I (..\HARDWARE\SPEEDCONTROL\speedcontrol.h)(0x60D24FBA)
-I (..\HARDWARE\BLUETOOTH\bluetooth.h)(0x60B78301)
+I (..\HARDWARE\SPEEDCONTROL\speedcontrol.h)(0x60E0329F)
+I (..\HARDWARE\BLUETOOTH\bluetooth.h)(0x60E02CE9)
 I (..\letter_shell\src\shell_port.h)(0x60C59ED0)
 I (..\letter_shell\src\shell.h)(0x60C64BE1)
 I (..\letter_shell\src\shell_cfg.h)(0x60C59B99)
@@ -50,7 +50,7 @@ I (..\HARDWARE\MPU9250\I2C_MPU9250.h)(0x60C88784)
 I (..\HARDWARE\multi_button/multi_button.h)(0x601BF25C)
 I (..\HARDWARE\MPU9250\angle.h)(0x60D2436A)
 I (..\HARDWARE\NIMING/data_transfer.h)(0x60D2B906)
-I (..\HARDWARE\BALANCE/balance.h)(0x60DED287)
+I (..\HARDWARE\BALANCE/balance.h)(0x60E035F7)
 F (..\HAL_lib\src\HAL_adc.c)(0x5D8DDCC2)(--c99 -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\HAL_lib\inc -I ..\Include -I ..\HARDWARE -I ..\HARDWARE\encoder -I ..\HARDWARE\OLED -I ..\HARDWARE\LCD -I ..\STARTUP -I ..\HARDWARE\MOTOR -I ..\HARDWARE\TIMER -I ..\HARDWARE\ADC -I ..\HARDWARE\TRACE -I ..\HARDWARE\SPEEDCONTROL -I ..\HARDWARE\BLUETOOTH -I ..\HARDWARE\GPIO -I ..\HARDWARE\MPU9250 -I ..\HARDWARE\UART -I ..\letter_shell\src -I ..\HARDWARE\BUZZER-I.\RTE\_Template-I"D:\Program Files\Keil_v5\ARM\CMSIS\Include"-D__UVISION_VERSION="527"-o ..\obj\hal_adc.o --omf_browse ..\obj\hal_adc.crf --depend ..\obj\hal_adc.d)
 I (..\HAL_lib\inc\HAL_adc.h)(0x5D8DDCC4)
 I (..\Include\HAL_device.h)(0x5D8DDCC4)
@@ -240,7 +240,7 @@ I (..\CORE\core_cmInstr.h)(0x5CB55A34)
 I (..\CORE\core_cmFunc.h)(0x5CB55A34)
 I (..\Include\system_MM32SPIN2xx_p.h)(0x5D8DDCC4)
 F (..\STARTUP\sys.c)(0x605F5E1E)(--c99 -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\HAL_lib\inc -I ..\Include -I ..\HARDWARE -I ..\HARDWARE\encoder -I ..\HARDWARE\OLED -I ..\HARDWARE\LCD -I ..\STARTUP -I ..\HARDWARE\MOTOR -I ..\HARDWARE\TIMER -I ..\HARDWARE\ADC -I ..\HARDWARE\TRACE -I ..\HARDWARE\SPEEDCONTROL -I ..\HARDWARE\BLUETOOTH -I ..\HARDWARE\GPIO -I ..\HARDWARE\MPU9250 -I ..\HARDWARE\UART -I ..\letter_shell\src -I ..\HARDWARE\BUZZER-I.\RTE\_Template-I"D:\Program Files\Keil_v5\ARM\CMSIS\Include"-D__UVISION_VERSION="527"-o ..\obj\sys.o --omf_browse ..\obj\sys.crf --depend ..\obj\sys.d)
-I (..\HARDWARE\include.h)(0x60CE373F)
+I (..\HARDWARE\include.h)(0x60E01585)
 I (D:\Program Files\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x60CB57FD)
 I (D:\Program Files\Keil_v5\ARM\ARMCC\include\string.h)(0x599ECD2C)
 I (D:\Program Files\Keil_v5\ARM\ARMCC\include\math.h)(0x599ECD2E)
@@ -277,13 +277,13 @@ I (..\HARDWARE\encoder\encoder.h)(0x608BF66A)
 I (..\HARDWARE\LCD\lcd.h)(0x605DE50D)
 I (D:\Program Files\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
 I (..\STARTUP\sys.h)(0x5FE72F3C)
-I (..\HARDWARE\TIMER\timer.h)(0x60D24961)
-I (..\HARDWARE\ADC\adc.h)(0x60694D40)
+I (..\HARDWARE\TIMER\timer.h)(0x60E01FE9)
+I (..\HARDWARE\ADC\adc.h)(0x60E01F9D)
 I (..\HARDWARE\TRACE\trace.h)(0x60C45647)
-I (..\HARDWARE\SPEEDCONTROL\speedcontrol.h)(0x60D24FBA)
-I (..\HARDWARE\BLUETOOTH\bluetooth.h)(0x60B78301)
+I (..\HARDWARE\SPEEDCONTROL\speedcontrol.h)(0x60E0329F)
+I (..\HARDWARE\BLUETOOTH\bluetooth.h)(0x60E02CE9)
 F (..\HARDWARE\encoder\encoder.c)(0x60C10327)(--c99 -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\HAL_lib\inc -I ..\Include -I ..\HARDWARE -I ..\HARDWARE\encoder -I ..\HARDWARE\OLED -I ..\HARDWARE\LCD -I ..\STARTUP -I ..\HARDWARE\MOTOR -I ..\HARDWARE\TIMER -I ..\HARDWARE\ADC -I ..\HARDWARE\TRACE -I ..\HARDWARE\SPEEDCONTROL -I ..\HARDWARE\BLUETOOTH -I ..\HARDWARE\GPIO -I ..\HARDWARE\MPU9250 -I ..\HARDWARE\UART -I ..\letter_shell\src -I ..\HARDWARE\BUZZER-I.\RTE\_Template-I"D:\Program Files\Keil_v5\ARM\CMSIS\Include"-D__UVISION_VERSION="527"-o ..\obj\encoder.o --omf_browse ..\obj\encoder.crf --depend ..\obj\encoder.d)
-I (..\HARDWARE\include.h)(0x60CE373F)
+I (..\HARDWARE\include.h)(0x60E01585)
 I (D:\Program Files\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x60CB57FD)
 I (D:\Program Files\Keil_v5\ARM\ARMCC\include\string.h)(0x599ECD2C)
 I (D:\Program Files\Keil_v5\ARM\ARMCC\include\math.h)(0x599ECD2E)
@@ -320,11 +320,11 @@ I (..\HARDWARE\encoder\encoder.h)(0x608BF66A)
 I (..\HARDWARE\LCD\lcd.h)(0x605DE50D)
 I (D:\Program Files\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
 I (..\STARTUP\sys.h)(0x5FE72F3C)
-I (..\HARDWARE\TIMER\timer.h)(0x60D24961)
-I (..\HARDWARE\ADC\adc.h)(0x60694D40)
+I (..\HARDWARE\TIMER\timer.h)(0x60E01FE9)
+I (..\HARDWARE\ADC\adc.h)(0x60E01F9D)
 I (..\HARDWARE\TRACE\trace.h)(0x60C45647)
-I (..\HARDWARE\SPEEDCONTROL\speedcontrol.h)(0x60D24FBA)
-I (..\HARDWARE\BLUETOOTH\bluetooth.h)(0x60B78301)
+I (..\HARDWARE\SPEEDCONTROL\speedcontrol.h)(0x60E0329F)
+I (..\HARDWARE\BLUETOOTH\bluetooth.h)(0x60E02CE9)
 F (..\HARDWARE\LCD\lcd.c)(0x605F5B3A)(--c99 -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\HAL_lib\inc -I ..\Include -I ..\HARDWARE -I ..\HARDWARE\encoder -I ..\HARDWARE\OLED -I ..\HARDWARE\LCD -I ..\STARTUP -I ..\HARDWARE\MOTOR -I ..\HARDWARE\TIMER -I ..\HARDWARE\ADC -I ..\HARDWARE\TRACE -I ..\HARDWARE\SPEEDCONTROL -I ..\HARDWARE\BLUETOOTH -I ..\HARDWARE\GPIO -I ..\HARDWARE\MPU9250 -I ..\HARDWARE\UART -I ..\letter_shell\src -I ..\HARDWARE\BUZZER-I.\RTE\_Template-I"D:\Program Files\Keil_v5\ARM\CMSIS\Include"-D__UVISION_VERSION="527"-o ..\obj\lcd.o --omf_browse ..\obj\lcd.crf --depend ..\obj\lcd.d)
 I (..\Include\HAL_device.h)(0x5D8DDCC4)
 I (..\Include\MM32SPIN2xx_p.h)(0x5D9033D4)
@@ -355,7 +355,7 @@ I (..\HAL_lib\inc\HAL_misc.h)(0x5D8DDCC4)
 I (..\HAL_lib\inc\HAL_syscfg.h)(0x5D8DDCC4)
 I (..\HARDWARE\LCD\lcd_pic.h)(0x605DE4AF)
 I (..\HARDWARE\LCD\lcd.h)(0x605DE50D)
-I (..\HARDWARE\include.h)(0x60CE373F)
+I (..\HARDWARE\include.h)(0x60E01585)
 I (D:\Program Files\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x60CB57FD)
 I (D:\Program Files\Keil_v5\ARM\ARMCC\include\string.h)(0x599ECD2C)
 I (D:\Program Files\Keil_v5\ARM\ARMCC\include\math.h)(0x599ECD2E)
@@ -364,56 +364,13 @@ I (..\HARDWARE\MOTOR\motor.h)(0x608EAEB4)
 I (..\HARDWARE\encoder\encoder.h)(0x608BF66A)
 I (D:\Program Files\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
 I (..\STARTUP\sys.h)(0x5FE72F3C)
-I (..\HARDWARE\TIMER\timer.h)(0x60D24961)
-I (..\HARDWARE\ADC\adc.h)(0x60694D40)
+I (..\HARDWARE\TIMER\timer.h)(0x60E01FE9)
+I (..\HARDWARE\ADC\adc.h)(0x60E01F9D)
 I (..\HARDWARE\TRACE\trace.h)(0x60C45647)
-I (..\HARDWARE\SPEEDCONTROL\speedcontrol.h)(0x60D24FBA)
-I (..\HARDWARE\BLUETOOTH\bluetooth.h)(0x60B78301)
-F (..\HARDWARE\MOTOR\motor.c)(0x60D6F46B)(--c99 -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\HAL_lib\inc -I ..\Include -I ..\HARDWARE -I ..\HARDWARE\encoder -I ..\HARDWARE\OLED -I ..\HARDWARE\LCD -I ..\STARTUP -I ..\HARDWARE\MOTOR -I ..\HARDWARE\TIMER -I ..\HARDWARE\ADC -I ..\HARDWARE\TRACE -I ..\HARDWARE\SPEEDCONTROL -I ..\HARDWARE\BLUETOOTH -I ..\HARDWARE\GPIO -I ..\HARDWARE\MPU9250 -I ..\HARDWARE\UART -I ..\letter_shell\src -I ..\HARDWARE\BUZZER-I.\RTE\_Template-I"D:\Program Files\Keil_v5\ARM\CMSIS\Include"-D__UVISION_VERSION="527"-o ..\obj\motor.o --omf_browse ..\obj\motor.crf --depend ..\obj\motor.d)
-I (..\HARDWARE\include.h)(0x60CE373F)
-I (D:\Program Files\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x60CB57FD)
-I (D:\Program Files\Keil_v5\ARM\ARMCC\include\string.h)(0x599ECD2C)
-I (D:\Program Files\Keil_v5\ARM\ARMCC\include\math.h)(0x599ECD2E)
-I (..\HARDWARE\GPIO\GPIO.h)(0x60D0E319)
-I (..\HARDWARE\MOTOR\motor.h)(0x608EAEB4)
-I (..\Include\HAL_device.h)(0x5D8DDCC4)
-I (..\Include\MM32SPIN2xx_p.h)(0x5D9033D4)
-I (..\CORE\core_cm0.h)(0x5D5372D8)
-I (D:\Program Files\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
-I (..\CORE\core_cmInstr.h)(0x5CB55A34)
-I (..\CORE\core_cmFunc.h)(0x5CB55A34)
-I (..\Include\system_MM32SPIN2xx_p.h)(0x5D8DDCC4)
-I (..\HAL_lib\inc\HAL_conf.h)(0x5D902724)
-I (..\HAL_lib\inc\HAL_adc.h)(0x5D8DDCC4)
-I (..\HAL_lib\inc\HAL_crc.h)(0x5D8DDCC4)
-I (..\HAL_lib\inc\HAL_comp.h)(0x5D8DDCC4)
-I (..\HAL_lib\inc\HAL_dma.h)(0x5D8DDCC4)
-I (..\HAL_lib\inc\HAL_div.h)(0x5D8DDCC4)
-I (..\HAL_lib\inc\HAL_exti.h)(0x5D8DDCC4)
-I (..\HAL_lib\inc\HAL_flash.h)(0x5D8DDCF8)
-I (..\HAL_lib\inc\HAL_gpio.h)(0x5D8DDCC4)
-I (..\HAL_lib\inc\HAL_i2c.h)(0x5D8DDCC4)
-I (..\HAL_lib\inc\HAL_iwdg.h)(0x5D8DDCC4)
-I (..\HAL_lib\inc\HAL_op.h)(0x5D90263A)
-I (..\HAL_lib\inc\HAL_pwr.h)(0x5D8DDCC4)
-I (..\HAL_lib\inc\HAL_rcc.h)(0x5D8DDCC4)
-I (..\HAL_lib\inc\HAL_spi.h)(0x5D8DDCC4)
-I (..\HAL_lib\inc\HAL_tim.h)(0x5D8DDCC4)
-I (..\HAL_lib\inc\HAL_uart.h)(0x5D8DDCC4)
-I (..\HAL_lib\inc\HAL_wwdg.h)(0x5D8DDCC4)
-I (..\HAL_lib\inc\HAL_misc.h)(0x5D8DDCC4)
-I (..\HAL_lib\inc\HAL_syscfg.h)(0x5D8DDCC4)
-I (..\HARDWARE\encoder\encoder.h)(0x608BF66A)
-I (..\HARDWARE\LCD\lcd.h)(0x605DE50D)
-I (D:\Program Files\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
-I (..\STARTUP\sys.h)(0x5FE72F3C)
-I (..\HARDWARE\TIMER\timer.h)(0x60D24961)
-I (..\HARDWARE\ADC\adc.h)(0x60694D40)
-I (..\HARDWARE\TRACE\trace.h)(0x60C45647)
-I (..\HARDWARE\SPEEDCONTROL\speedcontrol.h)(0x60D24FBA)
-I (..\HARDWARE\BLUETOOTH\bluetooth.h)(0x60B78301)
-F (..\HARDWARE\TIMER\timer.c)(0x60DED60D)(--c99 -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\HAL_lib\inc -I ..\Include -I ..\HARDWARE -I ..\HARDWARE\encoder -I ..\HARDWARE\OLED -I ..\HARDWARE\LCD -I ..\STARTUP -I ..\HARDWARE\MOTOR -I ..\HARDWARE\TIMER -I ..\HARDWARE\ADC -I ..\HARDWARE\TRACE -I ..\HARDWARE\SPEEDCONTROL -I ..\HARDWARE\BLUETOOTH -I ..\HARDWARE\GPIO -I ..\HARDWARE\MPU9250 -I ..\HARDWARE\UART -I ..\letter_shell\src -I ..\HARDWARE\BUZZER-I.\RTE\_Template-I"D:\Program Files\Keil_v5\ARM\CMSIS\Include"-D__UVISION_VERSION="527"-o ..\obj\timer.o --omf_browse ..\obj\timer.crf --depend ..\obj\timer.d)
-I (..\HARDWARE\include.h)(0x60CE373F)
+I (..\HARDWARE\SPEEDCONTROL\speedcontrol.h)(0x60E0329F)
+I (..\HARDWARE\BLUETOOTH\bluetooth.h)(0x60E02CE9)
+F (..\HARDWARE\MOTOR\motor.c)(0x60E0399F)(--c99 -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\HAL_lib\inc -I ..\Include -I ..\HARDWARE -I ..\HARDWARE\encoder -I ..\HARDWARE\OLED -I ..\HARDWARE\LCD -I ..\STARTUP -I ..\HARDWARE\MOTOR -I ..\HARDWARE\TIMER -I ..\HARDWARE\ADC -I ..\HARDWARE\TRACE -I ..\HARDWARE\SPEEDCONTROL -I ..\HARDWARE\BLUETOOTH -I ..\HARDWARE\GPIO -I ..\HARDWARE\MPU9250 -I ..\HARDWARE\UART -I ..\letter_shell\src -I ..\HARDWARE\BUZZER-I.\RTE\_Template-I"D:\Program Files\Keil_v5\ARM\CMSIS\Include"-D__UVISION_VERSION="527"-o ..\obj\motor.o --omf_browse ..\obj\motor.crf --depend ..\obj\motor.d)
+I (..\HARDWARE\include.h)(0x60E01585)
 I (D:\Program Files\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x60CB57FD)
 I (D:\Program Files\Keil_v5\ARM\ARMCC\include\string.h)(0x599ECD2C)
 I (D:\Program Files\Keil_v5\ARM\ARMCC\include\math.h)(0x599ECD2E)
@@ -450,11 +407,54 @@ I (..\HARDWARE\encoder\encoder.h)(0x608BF66A)
 I (..\HARDWARE\LCD\lcd.h)(0x605DE50D)
 I (D:\Program Files\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
 I (..\STARTUP\sys.h)(0x5FE72F3C)
-I (..\HARDWARE\TIMER\timer.h)(0x60D24961)
-I (..\HARDWARE\ADC\adc.h)(0x60694D40)
+I (..\HARDWARE\TIMER\timer.h)(0x60E01FE9)
+I (..\HARDWARE\ADC\adc.h)(0x60E01F9D)
 I (..\HARDWARE\TRACE\trace.h)(0x60C45647)
-I (..\HARDWARE\SPEEDCONTROL\speedcontrol.h)(0x60D24FBA)
-I (..\HARDWARE\BLUETOOTH\bluetooth.h)(0x60B78301)
+I (..\HARDWARE\SPEEDCONTROL\speedcontrol.h)(0x60E0329F)
+I (..\HARDWARE\BLUETOOTH\bluetooth.h)(0x60E02CE9)
+F (..\HARDWARE\TIMER\timer.c)(0x60E03CC9)(--c99 -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\HAL_lib\inc -I ..\Include -I ..\HARDWARE -I ..\HARDWARE\encoder -I ..\HARDWARE\OLED -I ..\HARDWARE\LCD -I ..\STARTUP -I ..\HARDWARE\MOTOR -I ..\HARDWARE\TIMER -I ..\HARDWARE\ADC -I ..\HARDWARE\TRACE -I ..\HARDWARE\SPEEDCONTROL -I ..\HARDWARE\BLUETOOTH -I ..\HARDWARE\GPIO -I ..\HARDWARE\MPU9250 -I ..\HARDWARE\UART -I ..\letter_shell\src -I ..\HARDWARE\BUZZER-I.\RTE\_Template-I"D:\Program Files\Keil_v5\ARM\CMSIS\Include"-D__UVISION_VERSION="527"-o ..\obj\timer.o --omf_browse ..\obj\timer.crf --depend ..\obj\timer.d)
+I (..\HARDWARE\include.h)(0x60E01585)
+I (D:\Program Files\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x60CB57FD)
+I (D:\Program Files\Keil_v5\ARM\ARMCC\include\string.h)(0x599ECD2C)
+I (D:\Program Files\Keil_v5\ARM\ARMCC\include\math.h)(0x599ECD2E)
+I (..\HARDWARE\GPIO\GPIO.h)(0x60D0E319)
+I (..\HARDWARE\MOTOR\motor.h)(0x608EAEB4)
+I (..\Include\HAL_device.h)(0x5D8DDCC4)
+I (..\Include\MM32SPIN2xx_p.h)(0x5D9033D4)
+I (..\CORE\core_cm0.h)(0x5D5372D8)
+I (D:\Program Files\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\CORE\core_cmInstr.h)(0x5CB55A34)
+I (..\CORE\core_cmFunc.h)(0x5CB55A34)
+I (..\Include\system_MM32SPIN2xx_p.h)(0x5D8DDCC4)
+I (..\HAL_lib\inc\HAL_conf.h)(0x5D902724)
+I (..\HAL_lib\inc\HAL_adc.h)(0x5D8DDCC4)
+I (..\HAL_lib\inc\HAL_crc.h)(0x5D8DDCC4)
+I (..\HAL_lib\inc\HAL_comp.h)(0x5D8DDCC4)
+I (..\HAL_lib\inc\HAL_dma.h)(0x5D8DDCC4)
+I (..\HAL_lib\inc\HAL_div.h)(0x5D8DDCC4)
+I (..\HAL_lib\inc\HAL_exti.h)(0x5D8DDCC4)
+I (..\HAL_lib\inc\HAL_flash.h)(0x5D8DDCF8)
+I (..\HAL_lib\inc\HAL_gpio.h)(0x5D8DDCC4)
+I (..\HAL_lib\inc\HAL_i2c.h)(0x5D8DDCC4)
+I (..\HAL_lib\inc\HAL_iwdg.h)(0x5D8DDCC4)
+I (..\HAL_lib\inc\HAL_op.h)(0x5D90263A)
+I (..\HAL_lib\inc\HAL_pwr.h)(0x5D8DDCC4)
+I (..\HAL_lib\inc\HAL_rcc.h)(0x5D8DDCC4)
+I (..\HAL_lib\inc\HAL_spi.h)(0x5D8DDCC4)
+I (..\HAL_lib\inc\HAL_tim.h)(0x5D8DDCC4)
+I (..\HAL_lib\inc\HAL_uart.h)(0x5D8DDCC4)
+I (..\HAL_lib\inc\HAL_wwdg.h)(0x5D8DDCC4)
+I (..\HAL_lib\inc\HAL_misc.h)(0x5D8DDCC4)
+I (..\HAL_lib\inc\HAL_syscfg.h)(0x5D8DDCC4)
+I (..\HARDWARE\encoder\encoder.h)(0x608BF66A)
+I (..\HARDWARE\LCD\lcd.h)(0x605DE50D)
+I (D:\Program Files\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
+I (..\STARTUP\sys.h)(0x5FE72F3C)
+I (..\HARDWARE\TIMER\timer.h)(0x60E01FE9)
+I (..\HARDWARE\ADC\adc.h)(0x60E01F9D)
+I (..\HARDWARE\TRACE\trace.h)(0x60C45647)
+I (..\HARDWARE\SPEEDCONTROL\speedcontrol.h)(0x60E0329F)
+I (..\HARDWARE\BLUETOOTH\bluetooth.h)(0x60E02CE9)
 I (..\HARDWARE\BUZZER\buzzerDriver.h)(0x60D0DFB0)
 I (..\letter_shell\src\shell_port.h)(0x60C59ED0)
 I (..\letter_shell\src\shell.h)(0x60C64BE1)
@@ -462,9 +462,10 @@ I (..\letter_shell\src\shell_cfg.h)(0x60C59B99)
 I (..\HARDWARE\MPU9250\angle.h)(0x60D2436A)
 I (..\HARDWARE\BUZZER\mymath.h)(0x60D256D4)
 I (..\HARDWARE\multi_button/multi_button.h)(0x601BF25C)
-I (..\HARDWARE\BALANCE/balance.h)(0x60DED287)
-F (..\HARDWARE\ADC\ADC.c)(0x60D07009)(--c99 -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\HAL_lib\inc -I ..\Include -I ..\HARDWARE -I ..\HARDWARE\encoder -I ..\HARDWARE\OLED -I ..\HARDWARE\LCD -I ..\STARTUP -I ..\HARDWARE\MOTOR -I ..\HARDWARE\TIMER -I ..\HARDWARE\ADC -I ..\HARDWARE\TRACE -I ..\HARDWARE\SPEEDCONTROL -I ..\HARDWARE\BLUETOOTH -I ..\HARDWARE\GPIO -I ..\HARDWARE\MPU9250 -I ..\HARDWARE\UART -I ..\letter_shell\src -I ..\HARDWARE\BUZZER-I.\RTE\_Template-I"D:\Program Files\Keil_v5\ARM\CMSIS\Include"-D__UVISION_VERSION="527"-o ..\obj\adc.o --omf_browse ..\obj\adc.crf --depend ..\obj\adc.d)
-I (..\HARDWARE\include.h)(0x60CE373F)
+I (..\HARDWARE\BALANCE/balance.h)(0x60E035F7)
+I (..\HARDWARE\hellodata/hellodata.h)(0x60E01E21)
+F (..\HARDWARE\ADC\ADC.c)(0x60E01FA5)(--c99 -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\HAL_lib\inc -I ..\Include -I ..\HARDWARE -I ..\HARDWARE\encoder -I ..\HARDWARE\OLED -I ..\HARDWARE\LCD -I ..\STARTUP -I ..\HARDWARE\MOTOR -I ..\HARDWARE\TIMER -I ..\HARDWARE\ADC -I ..\HARDWARE\TRACE -I ..\HARDWARE\SPEEDCONTROL -I ..\HARDWARE\BLUETOOTH -I ..\HARDWARE\GPIO -I ..\HARDWARE\MPU9250 -I ..\HARDWARE\UART -I ..\letter_shell\src -I ..\HARDWARE\BUZZER-I.\RTE\_Template-I"D:\Program Files\Keil_v5\ARM\CMSIS\Include"-D__UVISION_VERSION="527"-o ..\obj\adc.o --omf_browse ..\obj\adc.crf --depend ..\obj\adc.d)
+I (..\HARDWARE\include.h)(0x60E01585)
 I (D:\Program Files\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x60CB57FD)
 I (D:\Program Files\Keil_v5\ARM\ARMCC\include\string.h)(0x599ECD2C)
 I (D:\Program Files\Keil_v5\ARM\ARMCC\include\math.h)(0x599ECD2E)
@@ -501,13 +502,13 @@ I (..\HARDWARE\encoder\encoder.h)(0x608BF66A)
 I (..\HARDWARE\LCD\lcd.h)(0x605DE50D)
 I (D:\Program Files\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
 I (..\STARTUP\sys.h)(0x5FE72F3C)
-I (..\HARDWARE\TIMER\timer.h)(0x60D24961)
-I (..\HARDWARE\ADC\adc.h)(0x60694D40)
+I (..\HARDWARE\TIMER\timer.h)(0x60E01FE9)
+I (..\HARDWARE\ADC\adc.h)(0x60E01F9D)
 I (..\HARDWARE\TRACE\trace.h)(0x60C45647)
-I (..\HARDWARE\SPEEDCONTROL\speedcontrol.h)(0x60D24FBA)
-I (..\HARDWARE\BLUETOOTH\bluetooth.h)(0x60B78301)
-F (..\HARDWARE\TRACE\trace.c)(0x60D08693)(--c99 -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\HAL_lib\inc -I ..\Include -I ..\HARDWARE -I ..\HARDWARE\encoder -I ..\HARDWARE\OLED -I ..\HARDWARE\LCD -I ..\STARTUP -I ..\HARDWARE\MOTOR -I ..\HARDWARE\TIMER -I ..\HARDWARE\ADC -I ..\HARDWARE\TRACE -I ..\HARDWARE\SPEEDCONTROL -I ..\HARDWARE\BLUETOOTH -I ..\HARDWARE\GPIO -I ..\HARDWARE\MPU9250 -I ..\HARDWARE\UART -I ..\letter_shell\src -I ..\HARDWARE\BUZZER-I.\RTE\_Template-I"D:\Program Files\Keil_v5\ARM\CMSIS\Include"-D__UVISION_VERSION="527"-o ..\obj\trace.o --omf_browse ..\obj\trace.crf --depend ..\obj\trace.d)
-I (..\HARDWARE\include.h)(0x60CE373F)
+I (..\HARDWARE\SPEEDCONTROL\speedcontrol.h)(0x60E0329F)
+I (..\HARDWARE\BLUETOOTH\bluetooth.h)(0x60E02CE9)
+F (..\HARDWARE\TRACE\trace.c)(0x60E02B23)(--c99 -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\HAL_lib\inc -I ..\Include -I ..\HARDWARE -I ..\HARDWARE\encoder -I ..\HARDWARE\OLED -I ..\HARDWARE\LCD -I ..\STARTUP -I ..\HARDWARE\MOTOR -I ..\HARDWARE\TIMER -I ..\HARDWARE\ADC -I ..\HARDWARE\TRACE -I ..\HARDWARE\SPEEDCONTROL -I ..\HARDWARE\BLUETOOTH -I ..\HARDWARE\GPIO -I ..\HARDWARE\MPU9250 -I ..\HARDWARE\UART -I ..\letter_shell\src -I ..\HARDWARE\BUZZER-I.\RTE\_Template-I"D:\Program Files\Keil_v5\ARM\CMSIS\Include"-D__UVISION_VERSION="527"-o ..\obj\trace.o --omf_browse ..\obj\trace.crf --depend ..\obj\trace.d)
+I (..\HARDWARE\include.h)(0x60E01585)
 I (D:\Program Files\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x60CB57FD)
 I (D:\Program Files\Keil_v5\ARM\ARMCC\include\string.h)(0x599ECD2C)
 I (D:\Program Files\Keil_v5\ARM\ARMCC\include\math.h)(0x599ECD2E)
@@ -544,13 +545,13 @@ I (..\HARDWARE\encoder\encoder.h)(0x608BF66A)
 I (..\HARDWARE\LCD\lcd.h)(0x605DE50D)
 I (D:\Program Files\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
 I (..\STARTUP\sys.h)(0x5FE72F3C)
-I (..\HARDWARE\TIMER\timer.h)(0x60D24961)
-I (..\HARDWARE\ADC\adc.h)(0x60694D40)
+I (..\HARDWARE\TIMER\timer.h)(0x60E01FE9)
+I (..\HARDWARE\ADC\adc.h)(0x60E01F9D)
 I (..\HARDWARE\TRACE\trace.h)(0x60C45647)
-I (..\HARDWARE\SPEEDCONTROL\speedcontrol.h)(0x60D24FBA)
-I (..\HARDWARE\BLUETOOTH\bluetooth.h)(0x60B78301)
-F (..\HARDWARE\SPEEDCONTROL\speedcontrol.c)(0x60D253BE)(--c99 -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\HAL_lib\inc -I ..\Include -I ..\HARDWARE -I ..\HARDWARE\encoder -I ..\HARDWARE\OLED -I ..\HARDWARE\LCD -I ..\STARTUP -I ..\HARDWARE\MOTOR -I ..\HARDWARE\TIMER -I ..\HARDWARE\ADC -I ..\HARDWARE\TRACE -I ..\HARDWARE\SPEEDCONTROL -I ..\HARDWARE\BLUETOOTH -I ..\HARDWARE\GPIO -I ..\HARDWARE\MPU9250 -I ..\HARDWARE\UART -I ..\letter_shell\src -I ..\HARDWARE\BUZZER-I.\RTE\_Template-I"D:\Program Files\Keil_v5\ARM\CMSIS\Include"-D__UVISION_VERSION="527"-o ..\obj\speedcontrol.o --omf_browse ..\obj\speedcontrol.crf --depend ..\obj\speedcontrol.d)
-I (..\HARDWARE\include.h)(0x60CE373F)
+I (..\HARDWARE\SPEEDCONTROL\speedcontrol.h)(0x60E0329F)
+I (..\HARDWARE\BLUETOOTH\bluetooth.h)(0x60E02CE9)
+F (..\HARDWARE\SPEEDCONTROL\speedcontrol.c)(0x60E03293)(--c99 -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\HAL_lib\inc -I ..\Include -I ..\HARDWARE -I ..\HARDWARE\encoder -I ..\HARDWARE\OLED -I ..\HARDWARE\LCD -I ..\STARTUP -I ..\HARDWARE\MOTOR -I ..\HARDWARE\TIMER -I ..\HARDWARE\ADC -I ..\HARDWARE\TRACE -I ..\HARDWARE\SPEEDCONTROL -I ..\HARDWARE\BLUETOOTH -I ..\HARDWARE\GPIO -I ..\HARDWARE\MPU9250 -I ..\HARDWARE\UART -I ..\letter_shell\src -I ..\HARDWARE\BUZZER-I.\RTE\_Template-I"D:\Program Files\Keil_v5\ARM\CMSIS\Include"-D__UVISION_VERSION="527"-o ..\obj\speedcontrol.o --omf_browse ..\obj\speedcontrol.crf --depend ..\obj\speedcontrol.d)
+I (..\HARDWARE\include.h)(0x60E01585)
 I (D:\Program Files\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x60CB57FD)
 I (D:\Program Files\Keil_v5\ARM\ARMCC\include\string.h)(0x599ECD2C)
 I (D:\Program Files\Keil_v5\ARM\ARMCC\include\math.h)(0x599ECD2E)
@@ -587,14 +588,14 @@ I (..\HARDWARE\encoder\encoder.h)(0x608BF66A)
 I (..\HARDWARE\LCD\lcd.h)(0x605DE50D)
 I (D:\Program Files\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
 I (..\STARTUP\sys.h)(0x5FE72F3C)
-I (..\HARDWARE\TIMER\timer.h)(0x60D24961)
-I (..\HARDWARE\ADC\adc.h)(0x60694D40)
+I (..\HARDWARE\TIMER\timer.h)(0x60E01FE9)
+I (..\HARDWARE\ADC\adc.h)(0x60E01F9D)
 I (..\HARDWARE\TRACE\trace.h)(0x60C45647)
-I (..\HARDWARE\SPEEDCONTROL\speedcontrol.h)(0x60D24FBA)
-I (..\HARDWARE\BLUETOOTH\bluetooth.h)(0x60B78301)
-I (..\HARDWARE\BALANCE/balance.h)(0x60DED287)
-F (..\HARDWARE\BLUETOOTH\bluetooth.c)(0x60D1A568)(--c99 -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\HAL_lib\inc -I ..\Include -I ..\HARDWARE -I ..\HARDWARE\encoder -I ..\HARDWARE\OLED -I ..\HARDWARE\LCD -I ..\STARTUP -I ..\HARDWARE\MOTOR -I ..\HARDWARE\TIMER -I ..\HARDWARE\ADC -I ..\HARDWARE\TRACE -I ..\HARDWARE\SPEEDCONTROL -I ..\HARDWARE\BLUETOOTH -I ..\HARDWARE\GPIO -I ..\HARDWARE\MPU9250 -I ..\HARDWARE\UART -I ..\letter_shell\src -I ..\HARDWARE\BUZZER-I.\RTE\_Template-I"D:\Program Files\Keil_v5\ARM\CMSIS\Include"-D__UVISION_VERSION="527"-o ..\obj\bluetooth.o --omf_browse ..\obj\bluetooth.crf --depend ..\obj\bluetooth.d)
-I (..\HARDWARE\include.h)(0x60CE373F)
+I (..\HARDWARE\SPEEDCONTROL\speedcontrol.h)(0x60E0329F)
+I (..\HARDWARE\BLUETOOTH\bluetooth.h)(0x60E02CE9)
+I (..\HARDWARE\BALANCE/balance.h)(0x60E035F7)
+F (..\HARDWARE\BLUETOOTH\bluetooth.c)(0x60E0200B)(--c99 -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\HAL_lib\inc -I ..\Include -I ..\HARDWARE -I ..\HARDWARE\encoder -I ..\HARDWARE\OLED -I ..\HARDWARE\LCD -I ..\STARTUP -I ..\HARDWARE\MOTOR -I ..\HARDWARE\TIMER -I ..\HARDWARE\ADC -I ..\HARDWARE\TRACE -I ..\HARDWARE\SPEEDCONTROL -I ..\HARDWARE\BLUETOOTH -I ..\HARDWARE\GPIO -I ..\HARDWARE\MPU9250 -I ..\HARDWARE\UART -I ..\letter_shell\src -I ..\HARDWARE\BUZZER-I.\RTE\_Template-I"D:\Program Files\Keil_v5\ARM\CMSIS\Include"-D__UVISION_VERSION="527"-o ..\obj\bluetooth.o --omf_browse ..\obj\bluetooth.crf --depend ..\obj\bluetooth.d)
+I (..\HARDWARE\include.h)(0x60E01585)
 I (D:\Program Files\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x60CB57FD)
 I (D:\Program Files\Keil_v5\ARM\ARMCC\include\string.h)(0x599ECD2C)
 I (D:\Program Files\Keil_v5\ARM\ARMCC\include\math.h)(0x599ECD2E)
@@ -631,18 +632,18 @@ I (..\HARDWARE\encoder\encoder.h)(0x608BF66A)
 I (..\HARDWARE\LCD\lcd.h)(0x605DE50D)
 I (D:\Program Files\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
 I (..\STARTUP\sys.h)(0x5FE72F3C)
-I (..\HARDWARE\TIMER\timer.h)(0x60D24961)
-I (..\HARDWARE\ADC\adc.h)(0x60694D40)
+I (..\HARDWARE\TIMER\timer.h)(0x60E01FE9)
+I (..\HARDWARE\ADC\adc.h)(0x60E01F9D)
 I (..\HARDWARE\TRACE\trace.h)(0x60C45647)
-I (..\HARDWARE\SPEEDCONTROL\speedcontrol.h)(0x60D24FBA)
-I (..\HARDWARE\BLUETOOTH\bluetooth.h)(0x60B78301)
+I (..\HARDWARE\SPEEDCONTROL\speedcontrol.h)(0x60E0329F)
+I (..\HARDWARE\BLUETOOTH\bluetooth.h)(0x60E02CE9)
 I (..\letter_shell\src\shell_port.h)(0x60C59ED0)
 I (..\letter_shell\src\shell.h)(0x60C64BE1)
 I (..\letter_shell\src\shell_cfg.h)(0x60C59B99)
 I (..\HARDWARE\NIMING/data_transfer.h)(0x60D2B906)
 F (..\HARDWARE\GPIO\GPIO.c)(0x60D2378F)(--c99 -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\HAL_lib\inc -I ..\Include -I ..\HARDWARE -I ..\HARDWARE\encoder -I ..\HARDWARE\OLED -I ..\HARDWARE\LCD -I ..\STARTUP -I ..\HARDWARE\MOTOR -I ..\HARDWARE\TIMER -I ..\HARDWARE\ADC -I ..\HARDWARE\TRACE -I ..\HARDWARE\SPEEDCONTROL -I ..\HARDWARE\BLUETOOTH -I ..\HARDWARE\GPIO -I ..\HARDWARE\MPU9250 -I ..\HARDWARE\UART -I ..\letter_shell\src -I ..\HARDWARE\BUZZER-I.\RTE\_Template-I"D:\Program Files\Keil_v5\ARM\CMSIS\Include"-D__UVISION_VERSION="527"-o ..\obj\gpio.o --omf_browse ..\obj\gpio.crf --depend ..\obj\gpio.d)
 I (..\HARDWARE\GPIO\GPIO.h)(0x60D0E319)
-I (..\HARDWARE\include.h)(0x60CE373F)
+I (..\HARDWARE\include.h)(0x60E01585)
 I (D:\Program Files\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x60CB57FD)
 I (D:\Program Files\Keil_v5\ARM\ARMCC\include\string.h)(0x599ECD2C)
 I (D:\Program Files\Keil_v5\ARM\ARMCC\include\math.h)(0x599ECD2E)
@@ -678,17 +679,17 @@ I (..\HARDWARE\encoder\encoder.h)(0x608BF66A)
 I (..\HARDWARE\LCD\lcd.h)(0x605DE50D)
 I (D:\Program Files\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
 I (..\STARTUP\sys.h)(0x5FE72F3C)
-I (..\HARDWARE\TIMER\timer.h)(0x60D24961)
-I (..\HARDWARE\ADC\adc.h)(0x60694D40)
+I (..\HARDWARE\TIMER\timer.h)(0x60E01FE9)
+I (..\HARDWARE\ADC\adc.h)(0x60E01F9D)
 I (..\HARDWARE\TRACE\trace.h)(0x60C45647)
-I (..\HARDWARE\SPEEDCONTROL\speedcontrol.h)(0x60D24FBA)
-I (..\HARDWARE\BLUETOOTH\bluetooth.h)(0x60B78301)
+I (..\HARDWARE\SPEEDCONTROL\speedcontrol.h)(0x60E0329F)
+I (..\HARDWARE\BLUETOOTH\bluetooth.h)(0x60E02CE9)
 I (..\HARDWARE\NIMING/data_transfer.h)(0x60D2B906)
 F (..\HARDWARE\MPU9250\angle.c)(0x60D24338)(--c99 -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\HAL_lib\inc -I ..\Include -I ..\HARDWARE -I ..\HARDWARE\encoder -I ..\HARDWARE\OLED -I ..\HARDWARE\LCD -I ..\STARTUP -I ..\HARDWARE\MOTOR -I ..\HARDWARE\TIMER -I ..\HARDWARE\ADC -I ..\HARDWARE\TRACE -I ..\HARDWARE\SPEEDCONTROL -I ..\HARDWARE\BLUETOOTH -I ..\HARDWARE\GPIO -I ..\HARDWARE\MPU9250 -I ..\HARDWARE\UART -I ..\letter_shell\src -I ..\HARDWARE\BUZZER-I.\RTE\_Template-I"D:\Program Files\Keil_v5\ARM\CMSIS\Include"-D__UVISION_VERSION="527"-o ..\obj\angle.o --omf_browse ..\obj\angle.crf --depend ..\obj\angle.d)
 I (..\HARDWARE\MPU9250\angle.h)(0x60D2436A)
 I (D:\Program Files\Keil_v5\ARM\ARMCC\include\math.h)(0x599ECD2E)
 I (..\HARDWARE\MPU9250\I2C_MPU9250.h)(0x60C88784)
-I (..\HARDWARE\include.h)(0x60CE373F)
+I (..\HARDWARE\include.h)(0x60E01585)
 I (D:\Program Files\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x60CB57FD)
 I (D:\Program Files\Keil_v5\ARM\ARMCC\include\string.h)(0x599ECD2C)
 I (..\HARDWARE\GPIO\GPIO.h)(0x60D0E319)
@@ -724,18 +725,18 @@ I (..\HARDWARE\encoder\encoder.h)(0x608BF66A)
 I (..\HARDWARE\LCD\lcd.h)(0x605DE50D)
 I (D:\Program Files\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
 I (..\STARTUP\sys.h)(0x5FE72F3C)
-I (..\HARDWARE\TIMER\timer.h)(0x60D24961)
-I (..\HARDWARE\ADC\adc.h)(0x60694D40)
+I (..\HARDWARE\TIMER\timer.h)(0x60E01FE9)
+I (..\HARDWARE\ADC\adc.h)(0x60E01F9D)
 I (..\HARDWARE\TRACE\trace.h)(0x60C45647)
-I (..\HARDWARE\SPEEDCONTROL\speedcontrol.h)(0x60D24FBA)
-I (..\HARDWARE\BLUETOOTH\bluetooth.h)(0x60B78301)
+I (..\HARDWARE\SPEEDCONTROL\speedcontrol.h)(0x60E0329F)
+I (..\HARDWARE\BLUETOOTH\bluetooth.h)(0x60E02CE9)
 I (..\letter_shell\src\shell_port.h)(0x60C59ED0)
 I (..\letter_shell\src\shell.h)(0x60C64BE1)
 I (..\letter_shell\src\shell_cfg.h)(0x60C59B99)
 F (..\HARDWARE\MPU9250\SOFTI2C.c)(0x60C84DAC)(--c99 -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\HAL_lib\inc -I ..\Include -I ..\HARDWARE -I ..\HARDWARE\encoder -I ..\HARDWARE\OLED -I ..\HARDWARE\LCD -I ..\STARTUP -I ..\HARDWARE\MOTOR -I ..\HARDWARE\TIMER -I ..\HARDWARE\ADC -I ..\HARDWARE\TRACE -I ..\HARDWARE\SPEEDCONTROL -I ..\HARDWARE\BLUETOOTH -I ..\HARDWARE\GPIO -I ..\HARDWARE\MPU9250 -I ..\HARDWARE\UART -I ..\letter_shell\src -I ..\HARDWARE\BUZZER-I.\RTE\_Template-I"D:\Program Files\Keil_v5\ARM\CMSIS\Include"-D__UVISION_VERSION="527"-o ..\obj\softi2c.o --omf_browse ..\obj\softi2c.crf --depend ..\obj\softi2c.d)
 I (D:\Program Files\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
 I (..\HARDWARE\MPU9250\SOFTI2C.h)(0x6096C393)
-I (..\HARDWARE\include.h)(0x60CE373F)
+I (..\HARDWARE\include.h)(0x60E01585)
 I (D:\Program Files\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x60CB57FD)
 I (D:\Program Files\Keil_v5\ARM\ARMCC\include\string.h)(0x599ECD2C)
 I (D:\Program Files\Keil_v5\ARM\ARMCC\include\math.h)(0x599ECD2E)
@@ -771,13 +772,13 @@ I (..\HARDWARE\encoder\encoder.h)(0x608BF66A)
 I (..\HARDWARE\LCD\lcd.h)(0x605DE50D)
 I (D:\Program Files\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
 I (..\STARTUP\sys.h)(0x5FE72F3C)
-I (..\HARDWARE\TIMER\timer.h)(0x60D24961)
-I (..\HARDWARE\ADC\adc.h)(0x60694D40)
+I (..\HARDWARE\TIMER\timer.h)(0x60E01FE9)
+I (..\HARDWARE\ADC\adc.h)(0x60E01F9D)
 I (..\HARDWARE\TRACE\trace.h)(0x60C45647)
-I (..\HARDWARE\SPEEDCONTROL\speedcontrol.h)(0x60D24FBA)
-I (..\HARDWARE\BLUETOOTH\bluetooth.h)(0x60B78301)
+I (..\HARDWARE\SPEEDCONTROL\speedcontrol.h)(0x60E0329F)
+I (..\HARDWARE\BLUETOOTH\bluetooth.h)(0x60E02CE9)
 F (..\HARDWARE\BUZZER\buzzerDriver.c)(0x60D0DFB2)(--c99 -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\HAL_lib\inc -I ..\Include -I ..\HARDWARE -I ..\HARDWARE\encoder -I ..\HARDWARE\OLED -I ..\HARDWARE\LCD -I ..\STARTUP -I ..\HARDWARE\MOTOR -I ..\HARDWARE\TIMER -I ..\HARDWARE\ADC -I ..\HARDWARE\TRACE -I ..\HARDWARE\SPEEDCONTROL -I ..\HARDWARE\BLUETOOTH -I ..\HARDWARE\GPIO -I ..\HARDWARE\MPU9250 -I ..\HARDWARE\UART -I ..\letter_shell\src -I ..\HARDWARE\BUZZER-I.\RTE\_Template-I"D:\Program Files\Keil_v5\ARM\CMSIS\Include"-D__UVISION_VERSION="527"-o ..\obj\buzzerdriver.o --omf_browse ..\obj\buzzerdriver.crf --depend ..\obj\buzzerdriver.d)
-I (..\HARDWARE\include.h)(0x60CE373F)
+I (..\HARDWARE\include.h)(0x60E01585)
 I (D:\Program Files\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x60CB57FD)
 I (D:\Program Files\Keil_v5\ARM\ARMCC\include\string.h)(0x599ECD2C)
 I (D:\Program Files\Keil_v5\ARM\ARMCC\include\math.h)(0x599ECD2E)
@@ -814,11 +815,11 @@ I (..\HARDWARE\encoder\encoder.h)(0x608BF66A)
 I (..\HARDWARE\LCD\lcd.h)(0x605DE50D)
 I (D:\Program Files\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
 I (..\STARTUP\sys.h)(0x5FE72F3C)
-I (..\HARDWARE\TIMER\timer.h)(0x60D24961)
-I (..\HARDWARE\ADC\adc.h)(0x60694D40)
+I (..\HARDWARE\TIMER\timer.h)(0x60E01FE9)
+I (..\HARDWARE\ADC\adc.h)(0x60E01F9D)
 I (..\HARDWARE\TRACE\trace.h)(0x60C45647)
-I (..\HARDWARE\SPEEDCONTROL\speedcontrol.h)(0x60D24FBA)
-I (..\HARDWARE\BLUETOOTH\bluetooth.h)(0x60B78301)
+I (..\HARDWARE\SPEEDCONTROL\speedcontrol.h)(0x60E0329F)
+I (..\HARDWARE\BLUETOOTH\bluetooth.h)(0x60E02CE9)
 I (..\HARDWARE\BUZZER\buzzerDriver.h)(0x60D0DFB0)
 I (..\HARDWARE\BUZZER\melody.h)(0x60D0D242)
 I (D:\Program Files\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
@@ -828,7 +829,7 @@ I (..\letter_shell\src\shell.h)(0x60C64BE1)
 I (..\letter_shell\src\shell_cfg.h)(0x60C59B99)
 F (..\HARDWARE\MPU9250\I2C_MPU9250.c)(0x60D2AEA8)(--c99 -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\HAL_lib\inc -I ..\Include -I ..\HARDWARE -I ..\HARDWARE\encoder -I ..\HARDWARE\OLED -I ..\HARDWARE\LCD -I ..\STARTUP -I ..\HARDWARE\MOTOR -I ..\HARDWARE\TIMER -I ..\HARDWARE\ADC -I ..\HARDWARE\TRACE -I ..\HARDWARE\SPEEDCONTROL -I ..\HARDWARE\BLUETOOTH -I ..\HARDWARE\GPIO -I ..\HARDWARE\MPU9250 -I ..\HARDWARE\UART -I ..\letter_shell\src -I ..\HARDWARE\BUZZER-I.\RTE\_Template-I"D:\Program Files\Keil_v5\ARM\CMSIS\Include"-D__UVISION_VERSION="527"-o ..\obj\i2c_mpu9250.o --omf_browse ..\obj\i2c_mpu9250.crf --depend ..\obj\i2c_mpu9250.d)
 I (..\HARDWARE\MPU9250\I2C_MPU9250.h)(0x60C88784)
-I (..\HARDWARE\include.h)(0x60CE373F)
+I (..\HARDWARE\include.h)(0x60E01585)
 I (D:\Program Files\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x60CB57FD)
 I (D:\Program Files\Keil_v5\ARM\ARMCC\include\string.h)(0x599ECD2C)
 I (D:\Program Files\Keil_v5\ARM\ARMCC\include\math.h)(0x599ECD2E)
@@ -865,14 +866,14 @@ I (..\HARDWARE\encoder\encoder.h)(0x608BF66A)
 I (..\HARDWARE\LCD\lcd.h)(0x605DE50D)
 I (D:\Program Files\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
 I (..\STARTUP\sys.h)(0x5FE72F3C)
-I (..\HARDWARE\TIMER\timer.h)(0x60D24961)
-I (..\HARDWARE\ADC\adc.h)(0x60694D40)
+I (..\HARDWARE\TIMER\timer.h)(0x60E01FE9)
+I (..\HARDWARE\ADC\adc.h)(0x60E01F9D)
 I (..\HARDWARE\TRACE\trace.h)(0x60C45647)
-I (..\HARDWARE\SPEEDCONTROL\speedcontrol.h)(0x60D24FBA)
-I (..\HARDWARE\BLUETOOTH\bluetooth.h)(0x60B78301)
+I (..\HARDWARE\SPEEDCONTROL\speedcontrol.h)(0x60E0329F)
+I (..\HARDWARE\BLUETOOTH\bluetooth.h)(0x60E02CE9)
 I (..\HARDWARE\MPU9250\SOFTI2C.h)(0x6096C393)
-F (..\HARDWARE\NIMING\data_transfer.c)(0x60DDD9A3)(--c99 -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\HAL_lib\inc -I ..\Include -I ..\HARDWARE -I ..\HARDWARE\encoder -I ..\HARDWARE\OLED -I ..\HARDWARE\LCD -I ..\STARTUP -I ..\HARDWARE\MOTOR -I ..\HARDWARE\TIMER -I ..\HARDWARE\ADC -I ..\HARDWARE\TRACE -I ..\HARDWARE\SPEEDCONTROL -I ..\HARDWARE\BLUETOOTH -I ..\HARDWARE\GPIO -I ..\HARDWARE\MPU9250 -I ..\HARDWARE\UART -I ..\letter_shell\src -I ..\HARDWARE\BUZZER-I.\RTE\_Template-I"D:\Program Files\Keil_v5\ARM\CMSIS\Include"-D__UVISION_VERSION="527"-o ..\obj\data_transfer.o --omf_browse ..\obj\data_transfer.crf --depend ..\obj\data_transfer.d)
-I (..\HARDWARE\include.h)(0x60CE373F)
+F (..\HARDWARE\NIMING\data_transfer.c)(0x60E0360D)(--c99 -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\HAL_lib\inc -I ..\Include -I ..\HARDWARE -I ..\HARDWARE\encoder -I ..\HARDWARE\OLED -I ..\HARDWARE\LCD -I ..\STARTUP -I ..\HARDWARE\MOTOR -I ..\HARDWARE\TIMER -I ..\HARDWARE\ADC -I ..\HARDWARE\TRACE -I ..\HARDWARE\SPEEDCONTROL -I ..\HARDWARE\BLUETOOTH -I ..\HARDWARE\GPIO -I ..\HARDWARE\MPU9250 -I ..\HARDWARE\UART -I ..\letter_shell\src -I ..\HARDWARE\BUZZER-I.\RTE\_Template-I"D:\Program Files\Keil_v5\ARM\CMSIS\Include"-D__UVISION_VERSION="527"-o ..\obj\data_transfer.o --omf_browse ..\obj\data_transfer.crf --depend ..\obj\data_transfer.d)
+I (..\HARDWARE\include.h)(0x60E01585)
 I (D:\Program Files\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x60CB57FD)
 I (D:\Program Files\Keil_v5\ARM\ARMCC\include\string.h)(0x599ECD2C)
 I (D:\Program Files\Keil_v5\ARM\ARMCC\include\math.h)(0x599ECD2E)
@@ -909,16 +910,16 @@ I (..\HARDWARE\encoder\encoder.h)(0x608BF66A)
 I (..\HARDWARE\LCD\lcd.h)(0x605DE50D)
 I (D:\Program Files\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
 I (..\STARTUP\sys.h)(0x5FE72F3C)
-I (..\HARDWARE\TIMER\timer.h)(0x60D24961)
-I (..\HARDWARE\ADC\adc.h)(0x60694D40)
+I (..\HARDWARE\TIMER\timer.h)(0x60E01FE9)
+I (..\HARDWARE\ADC\adc.h)(0x60E01F9D)
 I (..\HARDWARE\TRACE\trace.h)(0x60C45647)
-I (..\HARDWARE\SPEEDCONTROL\speedcontrol.h)(0x60D24FBA)
-I (..\HARDWARE\BLUETOOTH\bluetooth.h)(0x60B78301)
+I (..\HARDWARE\SPEEDCONTROL\speedcontrol.h)(0x60E0329F)
+I (..\HARDWARE\BLUETOOTH\bluetooth.h)(0x60E02CE9)
 I (..\HARDWARE\NIMING/data_transfer.h)(0x60D2B906)
 I (..\HARDWARE\MPU9250\angle.h)(0x60D2436A)
-I (..\HARDWARE\BALANCE/balance.h)(0x60DED287)
-F (..\HARDWARE\BALANCE\balance.c)(0x60DED634)(--c99 -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\HAL_lib\inc -I ..\Include -I ..\HARDWARE -I ..\HARDWARE\encoder -I ..\HARDWARE\OLED -I ..\HARDWARE\LCD -I ..\STARTUP -I ..\HARDWARE\MOTOR -I ..\HARDWARE\TIMER -I ..\HARDWARE\ADC -I ..\HARDWARE\TRACE -I ..\HARDWARE\SPEEDCONTROL -I ..\HARDWARE\BLUETOOTH -I ..\HARDWARE\GPIO -I ..\HARDWARE\MPU9250 -I ..\HARDWARE\UART -I ..\letter_shell\src -I ..\HARDWARE\BUZZER-I.\RTE\_Template-I"D:\Program Files\Keil_v5\ARM\CMSIS\Include"-D__UVISION_VERSION="527"-o ..\obj\balance.o --omf_browse ..\obj\balance.crf --depend ..\obj\balance.d)
-I (..\HARDWARE\BALANCE/balance.h)(0x60DED287)
+I (..\HARDWARE\BALANCE/balance.h)(0x60E035F7)
+F (..\HARDWARE\BALANCE\balance.c)(0x60E03B5A)(--c99 -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\HAL_lib\inc -I ..\Include -I ..\HARDWARE -I ..\HARDWARE\encoder -I ..\HARDWARE\OLED -I ..\HARDWARE\LCD -I ..\STARTUP -I ..\HARDWARE\MOTOR -I ..\HARDWARE\TIMER -I ..\HARDWARE\ADC -I ..\HARDWARE\TRACE -I ..\HARDWARE\SPEEDCONTROL -I ..\HARDWARE\BLUETOOTH -I ..\HARDWARE\GPIO -I ..\HARDWARE\MPU9250 -I ..\HARDWARE\UART -I ..\letter_shell\src -I ..\HARDWARE\BUZZER-I.\RTE\_Template-I"D:\Program Files\Keil_v5\ARM\CMSIS\Include"-D__UVISION_VERSION="527"-o ..\obj\balance.o --omf_browse ..\obj\balance.crf --depend ..\obj\balance.d)
+I (..\HARDWARE\BALANCE/balance.h)(0x60E035F7)
 I (..\HARDWARE\MPU9250\angle.h)(0x60D2436A)
 I (..\HARDWARE\BUZZER\mymath.h)(0x60D256D4)
 I (..\HARDWARE\MOTOR\motor.h)(0x608EAEB4)
@@ -949,8 +950,8 @@ I (..\HAL_lib\inc\HAL_uart.h)(0x5D8DDCC4)
 I (..\HAL_lib\inc\HAL_wwdg.h)(0x5D8DDCC4)
 I (..\HAL_lib\inc\HAL_misc.h)(0x5D8DDCC4)
 I (..\HAL_lib\inc\HAL_syscfg.h)(0x5D8DDCC4)
-I (..\HARDWARE\SPEEDCONTROL\speedcontrol.h)(0x60D24FBA)
-I (..\HARDWARE\include.h)(0x60CE373F)
+I (..\HARDWARE\SPEEDCONTROL\speedcontrol.h)(0x60E0329F)
+I (..\HARDWARE\include.h)(0x60E01585)
 I (D:\Program Files\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x60CB57FD)
 I (D:\Program Files\Keil_v5\ARM\ARMCC\include\string.h)(0x599ECD2C)
 I (D:\Program Files\Keil_v5\ARM\ARMCC\include\math.h)(0x599ECD2E)
@@ -959,10 +960,54 @@ I (..\HARDWARE\encoder\encoder.h)(0x608BF66A)
 I (..\HARDWARE\LCD\lcd.h)(0x605DE50D)
 I (D:\Program Files\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
 I (..\STARTUP\sys.h)(0x5FE72F3C)
-I (..\HARDWARE\TIMER\timer.h)(0x60D24961)
-I (..\HARDWARE\ADC\adc.h)(0x60694D40)
+I (..\HARDWARE\TIMER\timer.h)(0x60E01FE9)
+I (..\HARDWARE\ADC\adc.h)(0x60E01F9D)
 I (..\HARDWARE\TRACE\trace.h)(0x60C45647)
-I (..\HARDWARE\BLUETOOTH\bluetooth.h)(0x60B78301)
+I (..\HARDWARE\BLUETOOTH\bluetooth.h)(0x60E02CE9)
+F (..\HARDWARE\HELLODATA\hellodata.c)(0x60E01E40)(--c99 -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\HAL_lib\inc -I ..\Include -I ..\HARDWARE -I ..\HARDWARE\encoder -I ..\HARDWARE\OLED -I ..\HARDWARE\LCD -I ..\STARTUP -I ..\HARDWARE\MOTOR -I ..\HARDWARE\TIMER -I ..\HARDWARE\ADC -I ..\HARDWARE\TRACE -I ..\HARDWARE\SPEEDCONTROL -I ..\HARDWARE\BLUETOOTH -I ..\HARDWARE\GPIO -I ..\HARDWARE\MPU9250 -I ..\HARDWARE\UART -I ..\letter_shell\src -I ..\HARDWARE\BUZZER-I.\RTE\_Template-I"D:\Program Files\Keil_v5\ARM\CMSIS\Include"-D__UVISION_VERSION="527"-o ..\obj\hellodata.o --omf_browse ..\obj\hellodata.crf --depend ..\obj\hellodata.d)
+I (..\HARDWARE\hellodata/hellodata.h)(0x60E01E21)
+I (..\Include\MM32SPIN2xx_p.h)(0x5D9033D4)
+I (..\CORE\core_cm0.h)(0x5D5372D8)
+I (D:\Program Files\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\CORE\core_cmInstr.h)(0x5CB55A34)
+I (..\CORE\core_cmFunc.h)(0x5CB55A34)
+I (..\HARDWARE\BLUETOOTH\bluetooth.h)(0x60E02CE9)
+I (..\HARDWARE\include.h)(0x60E01585)
+I (D:\Program Files\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x60CB57FD)
+I (D:\Program Files\Keil_v5\ARM\ARMCC\include\string.h)(0x599ECD2C)
+I (D:\Program Files\Keil_v5\ARM\ARMCC\include\math.h)(0x599ECD2E)
+I (..\HARDWARE\GPIO\GPIO.h)(0x60D0E319)
+I (..\HARDWARE\MOTOR\motor.h)(0x608EAEB4)
+I (..\Include\HAL_device.h)(0x5D8DDCC4)
+I (..\Include\system_MM32SPIN2xx_p.h)(0x5D8DDCC4)
+I (..\HAL_lib\inc\HAL_conf.h)(0x5D902724)
+I (..\HAL_lib\inc\HAL_adc.h)(0x5D8DDCC4)
+I (..\HAL_lib\inc\HAL_crc.h)(0x5D8DDCC4)
+I (..\HAL_lib\inc\HAL_comp.h)(0x5D8DDCC4)
+I (..\HAL_lib\inc\HAL_dma.h)(0x5D8DDCC4)
+I (..\HAL_lib\inc\HAL_div.h)(0x5D8DDCC4)
+I (..\HAL_lib\inc\HAL_exti.h)(0x5D8DDCC4)
+I (..\HAL_lib\inc\HAL_flash.h)(0x5D8DDCF8)
+I (..\HAL_lib\inc\HAL_gpio.h)(0x5D8DDCC4)
+I (..\HAL_lib\inc\HAL_i2c.h)(0x5D8DDCC4)
+I (..\HAL_lib\inc\HAL_iwdg.h)(0x5D8DDCC4)
+I (..\HAL_lib\inc\HAL_op.h)(0x5D90263A)
+I (..\HAL_lib\inc\HAL_pwr.h)(0x5D8DDCC4)
+I (..\HAL_lib\inc\HAL_rcc.h)(0x5D8DDCC4)
+I (..\HAL_lib\inc\HAL_spi.h)(0x5D8DDCC4)
+I (..\HAL_lib\inc\HAL_tim.h)(0x5D8DDCC4)
+I (..\HAL_lib\inc\HAL_uart.h)(0x5D8DDCC4)
+I (..\HAL_lib\inc\HAL_wwdg.h)(0x5D8DDCC4)
+I (..\HAL_lib\inc\HAL_misc.h)(0x5D8DDCC4)
+I (..\HAL_lib\inc\HAL_syscfg.h)(0x5D8DDCC4)
+I (..\HARDWARE\encoder\encoder.h)(0x608BF66A)
+I (..\HARDWARE\LCD\lcd.h)(0x605DE50D)
+I (D:\Program Files\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
+I (..\STARTUP\sys.h)(0x5FE72F3C)
+I (..\HARDWARE\TIMER\timer.h)(0x60E01FE9)
+I (..\HARDWARE\ADC\adc.h)(0x60E01F9D)
+I (..\HARDWARE\TRACE\trace.h)(0x60C45647)
+I (..\HARDWARE\SPEEDCONTROL\speedcontrol.h)(0x60E0329F)
 F (..\letter_shell\src\shell.c)(0x6003E7A7)(--c99 -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\HAL_lib\inc -I ..\Include -I ..\HARDWARE -I ..\HARDWARE\encoder -I ..\HARDWARE\OLED -I ..\HARDWARE\LCD -I ..\STARTUP -I ..\HARDWARE\MOTOR -I ..\HARDWARE\TIMER -I ..\HARDWARE\ADC -I ..\HARDWARE\TRACE -I ..\HARDWARE\SPEEDCONTROL -I ..\HARDWARE\BLUETOOTH -I ..\HARDWARE\GPIO -I ..\HARDWARE\MPU9250 -I ..\HARDWARE\UART -I ..\letter_shell\src -I ..\HARDWARE\BUZZER-I.\RTE\_Template-I"D:\Program Files\Keil_v5\ARM\CMSIS\Include"-D__UVISION_VERSION="527"-o ..\obj\shell.o --omf_browse ..\obj\shell.crf --depend ..\obj\shell.d)
 I (..\letter_shell\src\shell.h)(0x60C64BE1)
 I (..\letter_shell\src\shell_cfg.h)(0x60C59B99)
@@ -983,7 +1028,7 @@ I (..\letter_shell\src\shell_ext.h)(0x6003E7A7)
 F (..\letter_shell\src\shell_port.c)(0x60D19D99)(--c99 -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\HAL_lib\inc -I ..\Include -I ..\HARDWARE -I ..\HARDWARE\encoder -I ..\HARDWARE\OLED -I ..\HARDWARE\LCD -I ..\STARTUP -I ..\HARDWARE\MOTOR -I ..\HARDWARE\TIMER -I ..\HARDWARE\ADC -I ..\HARDWARE\TRACE -I ..\HARDWARE\SPEEDCONTROL -I ..\HARDWARE\BLUETOOTH -I ..\HARDWARE\GPIO -I ..\HARDWARE\MPU9250 -I ..\HARDWARE\UART -I ..\letter_shell\src -I ..\HARDWARE\BUZZER-I.\RTE\_Template-I"D:\Program Files\Keil_v5\ARM\CMSIS\Include"-D__UVISION_VERSION="527"-o ..\obj\shell_port.o --omf_browse ..\obj\shell_port.crf --depend ..\obj\shell_port.d)
 I (..\letter_shell\src\shell.h)(0x60C64BE1)
 I (..\letter_shell\src\shell_cfg.h)(0x60C59B99)
-I (..\HARDWARE\include.h)(0x60CE373F)
+I (..\HARDWARE\include.h)(0x60E01585)
 I (D:\Program Files\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x60CB57FD)
 I (D:\Program Files\Keil_v5\ARM\ARMCC\include\string.h)(0x599ECD2C)
 I (D:\Program Files\Keil_v5\ARM\ARMCC\include\math.h)(0x599ECD2E)
@@ -1020,11 +1065,11 @@ I (..\HARDWARE\encoder\encoder.h)(0x608BF66A)
 I (..\HARDWARE\LCD\lcd.h)(0x605DE50D)
 I (D:\Program Files\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
 I (..\STARTUP\sys.h)(0x5FE72F3C)
-I (..\HARDWARE\TIMER\timer.h)(0x60D24961)
-I (..\HARDWARE\ADC\adc.h)(0x60694D40)
+I (..\HARDWARE\TIMER\timer.h)(0x60E01FE9)
+I (..\HARDWARE\ADC\adc.h)(0x60E01F9D)
 I (..\HARDWARE\TRACE\trace.h)(0x60C45647)
-I (..\HARDWARE\SPEEDCONTROL\speedcontrol.h)(0x60D24FBA)
-I (..\HARDWARE\BLUETOOTH\bluetooth.h)(0x60B78301)
+I (..\HARDWARE\SPEEDCONTROL\speedcontrol.h)(0x60E0329F)
+I (..\HARDWARE\BLUETOOTH\bluetooth.h)(0x60E02CE9)
 I (..\letter_shell\src\shell_port.h)(0x60C59ED0)
 F (..\HARDWARE\multi_button\multi_button.c)(0x601BF209)(--c99 -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\HAL_lib\inc -I ..\Include -I ..\HARDWARE -I ..\HARDWARE\encoder -I ..\HARDWARE\OLED -I ..\HARDWARE\LCD -I ..\STARTUP -I ..\HARDWARE\MOTOR -I ..\HARDWARE\TIMER -I ..\HARDWARE\ADC -I ..\HARDWARE\TRACE -I ..\HARDWARE\SPEEDCONTROL -I ..\HARDWARE\BLUETOOTH -I ..\HARDWARE\GPIO -I ..\HARDWARE\MPU9250 -I ..\HARDWARE\UART -I ..\letter_shell\src -I ..\HARDWARE\BUZZER-I.\RTE\_Template-I"D:\Program Files\Keil_v5\ARM\CMSIS\Include"-D__UVISION_VERSION="527"-o ..\obj\multi_button.o --omf_browse ..\obj\multi_button.crf --depend ..\obj\multi_button.d)
 I (..\HARDWARE\multi_button/multi_button.h)(0x601BF25C)
@@ -1034,7 +1079,7 @@ F (..\HARDWARE\multi_button\my_multi_button.c)(0x60D0E510)(--c99 -c --cpu Cortex
 I (..\HARDWARE\multi_button/multi_button.h)(0x601BF25C)
 I (D:\Program Files\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
 I (D:\Program Files\Keil_v5\ARM\ARMCC\include\string.h)(0x599ECD2C)
-I (..\HARDWARE\include.h)(0x60CE373F)
+I (..\HARDWARE\include.h)(0x60E01585)
 I (D:\Program Files\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x60CB57FD)
 I (D:\Program Files\Keil_v5\ARM\ARMCC\include\math.h)(0x599ECD2E)
 I (..\HARDWARE\GPIO\GPIO.h)(0x60D0E319)
@@ -1069,10 +1114,10 @@ I (..\HARDWARE\encoder\encoder.h)(0x608BF66A)
 I (..\HARDWARE\LCD\lcd.h)(0x605DE50D)
 I (D:\Program Files\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
 I (..\STARTUP\sys.h)(0x5FE72F3C)
-I (..\HARDWARE\TIMER\timer.h)(0x60D24961)
-I (..\HARDWARE\ADC\adc.h)(0x60694D40)
+I (..\HARDWARE\TIMER\timer.h)(0x60E01FE9)
+I (..\HARDWARE\ADC\adc.h)(0x60E01F9D)
 I (..\HARDWARE\TRACE\trace.h)(0x60C45647)
-I (..\HARDWARE\SPEEDCONTROL\speedcontrol.h)(0x60D24FBA)
-I (..\HARDWARE\BLUETOOTH\bluetooth.h)(0x60B78301)
+I (..\HARDWARE\SPEEDCONTROL\speedcontrol.h)(0x60E0329F)
+I (..\HARDWARE\BLUETOOTH\bluetooth.h)(0x60E02CE9)
 I (..\HARDWARE\BUZZER\buzzerDriver.h)(0x60D0DFB0)
 I (..\HARDWARE\BUZZER\mymath.h)(0x60D256D4)

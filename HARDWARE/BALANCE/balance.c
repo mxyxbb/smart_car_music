@@ -7,7 +7,7 @@
 #define MAXPWM 800
 
 // float ZHONGZHI=-43;//heavy block, debug block, and battary inside [MPU1]
-float ZHONGZHI=-73;//heavy block, debug block, and battary inside [MPU2]
+float ZHONGZHI=-58.8;//heavy block, debug block, and battary inside [MPU2]
 
 
 // float Balance_Kp=-60,Balance_Kd=0.05,Velocity_Kp=0.9,Velocity_Ki=0.02;//ok parameter 2021/06/23-7:14
@@ -19,12 +19,12 @@ float ZHONGZHI=-73;//heavy block, debug block, and battary inside [MPU2]
 // float Balance_Kp=-80,Balance_Kd=0.4,Velocity_Kp=0.0,Velocity_Ki=0.0;//zhili fine parameter 2021/06/26-18:01
 // float Balance_Kp=-48,Balance_Kd=0.24,Velocity_Kp=0.6,Velocity_Ki=0.006;//zhili and sudu fine parameter 2021/06/27-17:42
 // float Balance_Kp=-40,Balance_Kd=0.24,Velocity_Kp=0.5,Velocity_Ki=0.006;//zhili and sudu fine parameter 2021/07/01-20:47
-float Balance_Kp=-30,Balance_Kd=-0.72,Velocity_Kp=0.3,Velocity_Ki=0.01;//[for stand up]zhili and sudu fine parameter 2021/07/01-20:54
+float Balance_Kp=-30,Balance_Kd=-0.72,Velocity_Kp=0.5,Velocity_Ki=0.01;//[for stand up]zhili and sudu fine parameter 2021/07/01-20:54
 
 
 int motor1,motor2;
 
-float maxueyang_speed=2000;//100;
+float maxueyang_speed=400;//100;
 char Flag_Stop;
 char Flag_Qian=0;
 int Turn_Target=2;
@@ -51,8 +51,8 @@ int velocity(int encoder_left,int encoder_right)
 		Encoder += Encoder_Least*0.2;	                                    
 		Encoder_Integral +=Encoder;                                      
 		Encoder_Integral=Encoder_Integral-Movement;                       
-		if(Encoder_Integral>20000)  	Encoder_Integral=20000;   // 3000 fine          
-		if(Encoder_Integral<-20000)	Encoder_Integral=-20000;              
+		if(Encoder_Integral>10000)  	Encoder_Integral=10000;   // 3000 fine          
+		if(Encoder_Integral<-10000)	Encoder_Integral=-10000;              
 		Velocity=Encoder*Velocity_Kp+Encoder_Integral*Velocity_Ki;        
 		if(Flag_Stop==1)   Encoder_Integral=0;      
 
@@ -96,22 +96,28 @@ int turn(int encoder_left,int encoder_right)//ת�����?
 
 void set_pwm(int pwm1,int pwm3)
 {
-	int pwm;
+	int pwm,pwm_turn;
 	pwm=pwm1;
-	if(pwm<0){
-		right_diretion = 2;
-		left_diretion = 2;
-  }
-	else {
-		right_diretion = 1;
-		left_diretion = 1;
-	}
-	motor1=pwm+pwm3;
-	motor2=pwm-pwm3;
+	pwm_turn=pwm3;
+
+	motor1=pwm+pwm_turn;
+	motor2=pwm-pwm_turn;
+	
+	if(motor1 > 0) 
+		left_diretion=1;
+	else if (motor1 < 0)
+		left_diretion=2;
+	if(motor2 > 0) 
+		right_diretion=1;
+	else if (motor2 < 0)
+		right_diretion=2;
+	
+	motor1 = Abs(motor1);
+	motor2 = Abs(motor2);
+	
+	
 	if(motor1 > MAXPWM) motor1=MAXPWM;
-	else if(motor1 < -MAXPWM) motor1=-MAXPWM;
 	if(motor2 > MAXPWM) motor2=MAXPWM;
-	else if(motor2 < -MAXPWM) motor2=-MAXPWM;
 	
 	motor_run(motor1,motor2);
 }

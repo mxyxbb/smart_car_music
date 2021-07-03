@@ -13,7 +13,9 @@ float get_error_by_mean_filtering(float error);
 
 extern int left_pwm;
 extern int right_pwm;
-
+extern int left_error;
+extern int right_error;
+extern double error;
 
 #endif
 

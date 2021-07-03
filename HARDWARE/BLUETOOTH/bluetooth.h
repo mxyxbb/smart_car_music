@@ -20,9 +20,6 @@ extern int right_pwm ;
 extern float now_speed_left;
 extern float now_speed_right;
 extern int left_error;
-extern int adc_left;
-extern int adc_right;
-extern double error;
 
 
 #endif

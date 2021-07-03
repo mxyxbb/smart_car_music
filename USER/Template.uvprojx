@@ -638,6 +638,11 @@
               <FileType>1</FileType>
               <FilePath>..\HARDWARE\BALANCE\balance.c</FilePath>
             </File>
+            <File>
+              <FileName>hellodata.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\HARDWARE\HELLODATA\hellodata.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

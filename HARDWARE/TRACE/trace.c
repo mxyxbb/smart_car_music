@@ -1,8 +1,7 @@
 #include "include.h"
+#include "adc.h"
 
 int line_position = 0;
-extern int adc_left;
-extern int adc_right;
 extern int adc_left_level;
 extern int adc_left_vertical;
 extern int adc_right_level;
@@ -51,8 +50,8 @@ int adc_value_processing(void)
 int error_processing(float error)
 {
 	basic_speed = average_speed;
-	kp=7;
-	kd=15;
+	kp=5;
+	kd=0;
 	
 	/*
 	if(if_car_move==2)

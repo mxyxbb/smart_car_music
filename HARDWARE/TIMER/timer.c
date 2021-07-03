@@ -5,6 +5,9 @@
 #include "mymath.h"
 #include "multi_button/multi_button.h"
 #include "BALANCE/balance.h"
+#include "speedcontrol.h"
+#include "hellodata/hellodata.h"
+#include "adc.h"
 
 const u32 TIMERx[] = {TIM1_BASE, TIM2_BASE, TIM3_BASE, TIM8_BASE, TIM14_BASE, TIM16_BASE, TIM17_BASE};
 
@@ -86,24 +89,28 @@ void TIM16_IRQHandler(void)
 		__ExecuteOnce(adc_left_last=ADC1_Read(0));
 		__ExecuteOnce(adc_right_last=ADC1_Read(6));
 		/*-----------------��·ADC�˲�-----------------*/
-		adc_left=ADC1_Read(0);   
-		if((float_Abs((float)(adc_left)/(float)(adc_left_last))>1.3)&&(adc_left_filt_flag>5)) 
-		{
-			adc_left = adc_left_last;
-			adc_left_filt_flag = 0;
-		}
-		adc_left_last = adc_left;
-		adc_left_filt_flag++;
+		adc_left=ADC1_Read(0);
+		adc_left=ADC1_Read(0);
+		adc_left=ADC1_Read(0);
+		adc_left=ADC1_Read(0);
+		
+//		if((float_Abs((float)(adc_left)/(float)(adc_left_last))>1.3||(float_Abs((float)(adc_left)/(float)(adc_left_last))<0.8))&&(adc_left_filt_flag>5)) 
+//		{
+//			adc_left = adc_left_last;
+//			adc_left_filt_flag = 0;
+//		}
+//		adc_left_last = adc_left;
+//		adc_left_filt_flag++;
 		
 		
 		adc_right=ADC1_Read(6);
-		if((float_Abs((float)(adc_right)/(float)(adc_right_last))>1.3)&&(adc_right_filt_flag>5)) 
-		{
-			adc_right = adc_right_last;
-			adc_right_filt_flag = 0;
-		}
-		adc_right_last = adc_right;
-		adc_right_filt_flag++;
+//		if((float_Abs((float)(adc_right)/(float)(adc_right_last))>1.3||(float_Abs((float)(adc_right)/(float)(adc_right_last))<0.8))&&(adc_right_filt_flag>5)) 
+//		{
+//			adc_right = adc_right_last;
+//			adc_right_filt_flag = 0;
+//		}
+//		adc_right_last = adc_right;
+//		adc_right_filt_flag++;
 		/*-------------------------------------*/
 		
 		
@@ -155,7 +162,7 @@ void TIM16_IRQHandler(void)
 				{
 					pwm2=velocity(left_encoder_puslse,right_encoder_puslse); // [velocity loop]
 					// pwm3=turn(left_encoder_puslse,right_encoder_puslse);
-					pwm3=-5;
+					pwm3=(int)(-error*0.25f);
 				}
 				else// the car has not stood up, [turn off] the [velocity loop], avoid flying.
 				{
@@ -234,76 +241,9 @@ void TIM17_IRQHandler(void)
   if (TIM_GetITStatus(TIM17, TIM_IT_Update) != RESET) //���ָ����TIM�жϷ������?:TIM �ж�Դ
   {
     TIM_ClearITPendingBit(TIM17, TIM_IT_Update  );  //���TIMx���жϴ�����λ:TIM �ж�Դ
-    //�û�����
-/*    
-    left_encoder_puslse = (short)TIM1 -> CNT;  TIM1 -> CNT=0;//��������
-    right_encoder_puslse = (short)TIM2 -> CNT;  TIM2 -> CNT=0;//��������
-		
-		right_encoder_puslse = -right_encoder_puslse;
-		
-		adc_left=ADC1_Read(0);   
-		adc_right=ADC1_Read(6);
+    
 		
 		
-		//		adc_left_vertical=ADC1_Read(0);
-//		adc_left_level=ADC1_Read(1);
-
-//		adc_right_level=ADC1_Read(6); 
-//		adc_right_vertical=ADC1_Read(7);
-		
-//		adc_second_left=ADC1_Read(8);
-//		adc_second_right=ADC1_Read(9);
-
-		
-		switch(adc_value_processing())
-		{
-			case 0:
-				if_car_move = 2;//���켱ͣ
-				break;
-			case 1:
-			case 2:
-			case 3:
-			case 4:
-			case 5:
-			case 6:
-			case 7:  
-			default:
-				break;	
-		}
-		///////////////////////////////////////////
-		
-		cacl_error_1();
-		
-		
-		
-		if(if_car_move==1)
-		{
-			//cacl_error_1();//�ñ�ֵ��
-			sum_speed();
-			update_pwm();
-			motor_run(left_pwm,right_pwm);
-		}
-		else if(if_car_move==0)//�ջ���0
-		{
-			motor_run(0,0);
-		}
-		else if(if_car_move==2)
-		{
-			sum_speed();
-			//cacl_error_1();
-			sum_left_speed = 0;
-			sum_right_speed = 0;
-			update_pwm();
-			motor_run(left_pwm,right_pwm);
-		}
-		else 
-		{
-			motor_run(0,0);
-		}
-
-		*/
-		
-		//////////////////////////////////////////
 	}  
 }
 //��ʱ��1�жϷ������?

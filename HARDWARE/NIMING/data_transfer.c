@@ -12,6 +12,7 @@
 #include "speedcontrol.h"
 #include "timer.h"
 #include "BALANCE/balance.h"
+#include "adc.h"
 
 #define ANO_DT_USE_USART1
 
@@ -65,7 +66,7 @@ void ANO_DT_Data_Exchange(void)
 	{
 		f.send_status = 0;
 //		ANO_DT_Send_Status(Roll,Pitch,Yaw,baroAlt,0,fly_ready);
-		ANO_DT_Send_Status(0,angle,0,0,0,0);
+		ANO_DT_Send_Status(error,angle,0,0,0,0);
 	}	
 /////////////////////////////////////////////////////////////////////////////////////
 	else if(f.send_senser)
@@ -73,7 +74,7 @@ void ANO_DT_Data_Exchange(void)
 		f.send_senser = 0;
 		ANO_DT_Send_Senser(mpu6050.Acc.x,mpu6050.Acc.y,mpu6050.Acc.z,
 												mpu6050.Gyro.x,mpu6050.Gyro.y,mpu6050.Gyro.z,
-												/*ak8975.Mag_Adc.x,ak8975.Mag_Adc.y,ak8975.Mag_Adc.z,0*/0,0,0,0);
+												/*ak8975.Mag_Adc.x,ak8975.Mag_Adc.y,ak8975.Mag_Adc.z,0*/adc_left,adc_right,0,0);
 	}	
 /////////////////////////////////////////////////////////////////////////////////////
 	else if(f.send_rcdata)
@@ -85,7 +86,7 @@ void ANO_DT_Data_Exchange(void)
 	else if(f.send_motopwm)
 	{
 		f.send_motopwm = 0;
-		ANO_DT_Send_MotoPWM(pwm1,pwm2,Encoder_Integral,left_encoder_puslse,right_encoder_puslse,0,0,0);
+		ANO_DT_Send_MotoPWM(pwm1,pwm2,pwm3,left_encoder_puslse,right_encoder_puslse,motor1,motor2,0);
 	}	
 /////////////////////////////////////////////////////////////////////////////////////
 	else if(f.send_power)

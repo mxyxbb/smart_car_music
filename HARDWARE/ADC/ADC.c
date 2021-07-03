@@ -32,8 +32,8 @@ MM32SPIN27PS
 
 #include "include.h"
 
-int adc_left = 0;
-int adc_right = 0;
+float adc_left = 0;
+float adc_right = 0;
 int adc_left_level = 0;
 int adc_left_vertical = 0;
 int adc_right_level = 0;

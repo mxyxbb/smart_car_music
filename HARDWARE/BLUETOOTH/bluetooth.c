@@ -1,6 +1,7 @@
 #include "include.h"
 #include "shell_port.h"
 #include "NIMING/data_transfer.h"
+#include "adc.h"
 
 void UART1_IRQHandler(void)
 {

@@ -22,21 +22,35 @@ Dialog DLL:      TARMCM1.DLL V1.14.1.0
  
 <h2>Project:</h2>
 D:\shared documents\prj\飞卡\直立0623-4直立继续调\USER\Template.uvprojx
-Project File Date:  06/23/2021
+Project File Date:  07/03/2021
 
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 6 (build 750)', folder: 'D:\Program Files\Keil_v5\ARM\ARMCC\Bin'
 Build target 'Template'
-compiling balance.c...
-..\HARDWARE\BALANCE\balance.c(64): warning:  #177-D: variable "Turn_Convert"  was declared but never referenced
-  	 static float /*Turn_Target,*/Turn,Encoder_temp,Turn_Convert=0.9,Turn_Count;
-..\HARDWARE\BALANCE\balance.c(64): warning:  #177-D: variable "Turn_Count"  was declared but never referenced
-  	 static float /*Turn_Target,*/Turn,Encoder_temp,Turn_Convert=0.9,Turn_Count;
-..\HARDWARE\BALANCE\balance.c: 2 warnings, 0 errors
+compiling timer.c...
+..\HARDWARE\hellodata/hellodata.h(7): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\TIMER\timer.c(89): warning:  #188-D: enumerated type mixed with another type
+  		__ExecuteOnce(adc_left_last=ADC1_Read(0));
+..\HARDWARE\TIMER\timer.c(89): warning:  #188-D: enumerated type mixed with another type
+  		__ExecuteOnce(adc_left_last=ADC1_Read(0));
+..\HARDWARE\TIMER\timer.c(90): warning:  #188-D: enumerated type mixed with another type
+  		__ExecuteOnce(adc_right_last=ADC1_Read(6));
+..\HARDWARE\TIMER\timer.c(90): warning:  #188-D: enumerated type mixed with another type
+  		__ExecuteOnce(adc_right_last=ADC1_Read(6));
+..\HARDWARE\TIMER\timer.c(44): warning:  #550-D: variable "adc_left_last"  was set but never used
+  	static int adc_left_last; 
+..\HARDWARE\TIMER\timer.c(45): warning:  #177-D: variable "adc_left_filt_flag"  was declared but never referenced
+  	static u32 adc_left_filt_flag = 0;
+..\HARDWARE\TIMER\timer.c(46): warning:  #550-D: variable "adc_right_last"  was set but never used
+  	static int adc_right_last; 
+..\HARDWARE\TIMER\timer.c(47): warning:  #177-D: variable "adc_right_filt_flag"  was declared but never referenced
+  	static u32 adc_right_filt_flag = 0;
+..\HARDWARE\TIMER\timer.c: 9 warnings, 0 errors
 linking...
-Program Size: Code=28272 RO-data=6968 RW-data=624 ZI-data=1872  
+Program Size: Code=28112 RO-data=6968 RW-data=632 ZI-data=1872  
 FromELF: creating hex file...
-"..\OBJ\Template.axf" - 0 Error(s), 2 Warning(s).
+"..\OBJ\Template.axf" - 0 Error(s), 9 Warning(s).
 
 <h2>Software Packages used:</h2>
 
