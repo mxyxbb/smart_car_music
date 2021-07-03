@@ -7,7 +7,7 @@
 #define MAXPWM 800
 
 // float ZHONGZHI=-43;//heavy block, debug block, and battary inside [MPU1]
-float ZHONGZHI=-58.8;//heavy block, debug block, and battary inside [MPU2]
+float ZHONGZHI=-60;//heavy block, debug block, and battary inside [MPU2]
 
 
 // float Balance_Kp=-60,Balance_Kd=0.05,Velocity_Kp=0.9,Velocity_Ki=0.02;//ok parameter 2021/06/23-7:14
@@ -24,7 +24,7 @@ float Balance_Kp=-30,Balance_Kd=-0.72,Velocity_Kp=0.5,Velocity_Ki=0.01;//[for st
 
 int motor1,motor2;
 
-float maxueyang_speed=400;//100;
+float maxueyang_speed=400;//speed
 char Flag_Stop;
 char Flag_Qian=0;
 int Turn_Target=2;
@@ -61,36 +61,21 @@ int velocity(int encoder_left,int encoder_right)
 
 int turn(int encoder_left,int encoder_right)//ת�����?
 {
-	 static float /*Turn_Target,*/Turn,Encoder_temp,Turn_Convert=0.9,Turn_Count;
-	  float Turn_Amplitude=88,Kp=15,Kd=0;     
-	  //=============ң��������ת����=======================//
-//  	if(1==Flag_Left||1==Flag_Right)                      //��һ������Ҫ�Ǹ�����תǰ���ٶȵ����ٶȵ���ʼ�ٶȣ�����С������Ӧ��
-//		{
-//			if(++Turn_Count==1)
-//			Encoder_temp=myabs(encoder_left+encoder_right);
-//			Turn_Convert=50/Encoder_temp;
-//			if(Turn_Convert<0.6)Turn_Convert=0.6;
-//			if(Turn_Convert>3)Turn_Convert=3;
-//		}	
-//	  else
-//		{
-//			Turn_Convert=0.9;
-//			Turn_Count=0;
-//			Encoder_temp=0;
-//		}			
-	
-//		if(1==Flag_Left)	           Turn_Target-=Turn_Convert;
-//		else if(1==Flag_Right)	     Turn_Target+=Turn_Convert; 
-//		else Turn_Target=0;
-		Encoder_temp=abs(encoder_left+encoder_right);
-		Turn_Target=-100/Encoder_temp;
-    if(Turn_Target>Turn_Amplitude)  Turn_Target=Turn_Amplitude;    //===ת���ٶ��޷�
-	  if(Turn_Target<-Turn_Amplitude) Turn_Target=-Turn_Amplitude;
-		if(Flag_Qian==1)  Kd=-0.01;        
-		else Kd=0;   //ת���ʱ��ȡ�������ǵľ���? �е�ģ��PID��˼��
-  	//=============ת��PD������=======================//
-		Turn=-Turn_Target*Kp-mpu6050.Gyro.z*Kd;                 //===���Z�������ǽ���PD����
-	  return Turn;
+	 static float Turn,Kp=-0.25,Kd=-0.04;
+	 Turn=error*Kp+mpu6050.Gyro.z*Kd;
+	 return Turn;
+}
+
+/*
+car standing: return 1
+car lying: return 0
+*/
+uint8_t angle_is_normal()
+{
+	if((angle < ZHONGZHI+20) && (angle > ZHONGZHI-20))
+		return 1;
+	else
+		return 0;
 }
 
 

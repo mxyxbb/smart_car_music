@@ -43,3 +43,4 @@
 ..\obj\speedcontrol.o: ..\HARDWARE\SPEEDCONTROL\speedcontrol.h
 ..\obj\speedcontrol.o: ..\HARDWARE\BLUETOOTH\bluetooth.h
 ..\obj\speedcontrol.o: ..\HARDWARE\BALANCE/balance.h
+..\obj\speedcontrol.o: ..\Include\MM32SPIN2xx_p.h

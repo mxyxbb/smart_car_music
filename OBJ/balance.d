@@ -1,14 +1,15 @@
 ..\obj\balance.o: ..\HARDWARE\BALANCE\balance.c
 ..\obj\balance.o: ..\HARDWARE\BALANCE/balance.h
-..\obj\balance.o: ..\HARDWARE\MPU9250\angle.h
-..\obj\balance.o: ..\HARDWARE\BUZZER\mymath.h
-..\obj\balance.o: ..\HARDWARE\MOTOR\motor.h
-..\obj\balance.o: ..\Include\HAL_device.h
 ..\obj\balance.o: ..\Include\MM32SPIN2xx_p.h
 ..\obj\balance.o: ..\CORE\core_cm0.h
 ..\obj\balance.o: D:\Program Files\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 ..\obj\balance.o: ..\CORE\core_cmInstr.h
 ..\obj\balance.o: ..\CORE\core_cmFunc.h
+..\obj\balance.o: ..\HARDWARE\MPU9250\angle.h
+..\obj\balance.o: ..\HARDWARE\BUZZER\mymath.h
+..\obj\balance.o: ..\HARDWARE\MOTOR\motor.h
+..\obj\balance.o: ..\Include\HAL_device.h
+..\obj\balance.o: ..\Include\MM32SPIN2xx_p.h
 ..\obj\balance.o: ..\Include\system_MM32SPIN2xx_p.h
 ..\obj\balance.o: ..\HAL_lib\inc\HAL_conf.h
 ..\obj\balance.o: ..\HAL_lib\inc\HAL_adc.h

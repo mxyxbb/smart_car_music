@@ -8,6 +8,7 @@
 #include "speedcontrol.h"
 #include "hellodata/hellodata.h"
 #include "adc.h"
+#include "CONTROLTASK/control_task.h"
 
 const u32 TIMERx[] = {TIM1_BASE, TIM2_BASE, TIM3_BASE, TIM8_BASE, TIM14_BASE, TIM16_BASE, TIM17_BASE};
 
@@ -16,10 +17,18 @@ char str_timer[255];
 
 int pwm1,pwm2,pwm3;
 u16 time0_timer = 0;
+u8 time1_timer_flag;
 #define TASK0_INIT_TIME 200 //200*10=2000ms
 
 u16 time1_timer = 0; //for stand up
 #define TASK1_STAND_TIME 50 //50*10=500ms
+
+u16 sancha_timer = 0;
+#define TASK2_SANCHA_TIME 50 //50*10=500ms
+
+u16 begin_cooler_timer =0;
+#define TASK3_COOLER_TIME 10 //10*10=100ms
+
 
 u8 buzzer_flag;//���Ʒ�������һ�±�־λ
 u8 if_music1,if_music2;
@@ -158,15 +167,50 @@ void TIM16_IRQHandler(void)
 			{
 				Flag_Stop=0; // flag to indicate the car is at the state -- [running], can be referrenced by other function.
 				pwm1=balance(); // [balance loop]
-				if(time1_timer>TASK1_STAND_TIME)// the car has stood up, [turn on] the [velocity loop].
+				if(time1_timer_flag && angle_is_normal())// the car has stood up, [turn on] the [velocity loop].
 				{
 					pwm2=velocity(left_encoder_puslse,right_encoder_puslse); // [velocity loop]
-					// pwm3=turn(left_encoder_puslse,right_encoder_puslse);
-					pwm3=(int)(-error*0.25f);
+					
+					
+					if(begin_cooler_timer>TASK3_COOLER_TIME)
+					{
+						//judge O or Y here
+						switch (judgeOandY())
+						{
+							case HUANDAO:
+								pwm3=turn(left_encoder_puslse,right_encoder_puslse);
+								break;
+							case SANCHA:
+								if(sancha_timer<TASK2_SANCHA_TIME)
+								{
+									musicPlay();
+									sancha_timer++;
+									pwm3=50;
+								}
+								else
+									pwm3=turn(left_encoder_puslse,right_encoder_puslse);
+								break;
+							default:
+								pwm3=turn(left_encoder_puslse,right_encoder_puslse);
+								break;
+						
+							
+						}
+					}
+					else
+					{
+						pwm3=0;
+						begin_cooler_timer++;
+					}
+					
+					
 				}
 				else// the car has not stood up, [turn off] the [velocity loop], avoid flying.
 				{
-					time1_timer++;
+					if(time1_timer>TASK1_STAND_TIME)
+						time1_timer_flag=1;
+					else
+						time1_timer++;
 					pwm2=0;
 				}
 				set_pwm(pwm1+pwm2,pwm3);
@@ -223,7 +267,7 @@ void TIM16_IRQHandler(void)
 			}
 			else if(if_music1==0&&if_music2==0)
 			{
-				TIM17->CCR1=0;
+				//TIM17->CCR1=0;
 			}
 		}
 		

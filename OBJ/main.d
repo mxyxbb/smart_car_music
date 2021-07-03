@@ -51,3 +51,4 @@
 ..\obj\main.o: ..\HARDWARE\MPU9250\angle.h
 ..\obj\main.o: ..\HARDWARE\NIMING/data_transfer.h
 ..\obj\main.o: ..\HARDWARE\BALANCE/balance.h
+..\obj\main.o: ..\Include\MM32SPIN2xx_p.h

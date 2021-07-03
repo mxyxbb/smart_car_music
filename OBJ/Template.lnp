@@ -38,6 +38,7 @@
 "..\obj\data_transfer.o"
 "..\obj\balance.o"
 "..\obj\hellodata.o"
+"..\obj\control_task.o"
 "..\obj\shell.o"
 "..\obj\shell_cmd_list.o"
 "..\obj\shell_companion.o"

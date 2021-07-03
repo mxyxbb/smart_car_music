@@ -45,3 +45,4 @@
 ..\obj\data_transfer.o: ..\HARDWARE\NIMING/data_transfer.h
 ..\obj\data_transfer.o: ..\HARDWARE\MPU9250\angle.h
 ..\obj\data_transfer.o: ..\HARDWARE\BALANCE/balance.h
+..\obj\data_transfer.o: ..\Include\MM32SPIN2xx_p.h
