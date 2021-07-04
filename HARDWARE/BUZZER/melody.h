@@ -102,6 +102,10 @@ typedef unsigned          char uint8_t;
 typedef unsigned short     int uint16_t;
 typedef unsigned           int uint32_t;
 
+
+const uint32_t TishiMelody1[] = {0,NOTE_G4, NOTE_F4, NOTE_A3,NOTE_A3, NOTE_B3,NOTE_B3,/**/ NOTE_E4,NOTE_D4,NOTE_F3,NOTE_F3,NOTE_G3,NOTE_G3,/**/NOTE_D4,NOTE_C4,NOTE_E3,NOTE_E3,NOTE_G3,NOTE_G3,NOTE_C4,NOTE_C4,NOTE_C4,0};
+const uint32_t TishiDuration1[] = {1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1};
+
 /*
 const uint32_t NJUSTMelody[] = {
 	NOTE_G4,NOTE_C5,NOTE_E5,NOTE_A5,NOTE_G5,NOTE_F5,NOTE_E5,NOTE_D5,NOTE_E5,NOTE_A4,NOTE_B4,NOTE_A4,NOTE_G4,NOTE_G5,NOTE_F5,NOTE_E5,NOTE_D5,NOTE_E5,NOTE_C5,NOTE_C5,NOTE_C5,NOTE_C5,NOTE_G4,NOTE_G4,
@@ -324,5 +328,11 @@ const uint32_t* melody4[] ={NJUSTMelody, secondMelody};//emu3
 const uint32_t* noteDurations4[] = {NJUSTDuration, secondDuration};
 const uint32_t melodySizes4[] ={sizeof(NJUSTMelody)/sizeof(uint32_t),
 						sizeof(secondDuration)/sizeof(uint32_t)};
+						
+const uint32_t* melody5[] ={TishiMelody1, secondMelody};
+const uint32_t* noteDurations5[] = {TishiDuration1, secondDuration};
+const uint32_t melodySizes5[] ={sizeof(TishiMelody1)/sizeof(uint32_t),
+						sizeof(secondDuration)/sizeof(uint32_t)};
+						
 						
 #endif /* MELODY_H_ */

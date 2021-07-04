@@ -204,3 +204,32 @@ void music4Play()
 //			buzzer_flag=1;
 	}
 }
+
+/*
+非堵塞
+定时调用music5_ticks
+通过标志位music5_play_flag来控制播放的开始
+置位music5_play_flag，可以非堵塞地播放一遍提示音
+播放完之后函数自动将标志位清零
+*/
+char music5_play_flag=0;
+void music5_ticks()
+{
+	static uint32_t cnt_=0;
+	static int noteIndex = 0;
+	if(!music5_play_flag) return;
+	if( noteIndex >= melodySizes5[0]) 
+	{
+		music5_play_flag=0;
+		noteIndex=0;
+		cnt_=0;
+		return;
+	}
+	buzzerSetNewFrequency(melody5[0][noteIndex]);
+	if(cnt_++%(noteDurations5[0][noteIndex] * (melodySlowfactor[0]))==0)
+	{
+		noteIndex++;
+//		if(noteIndex%8==2)
+//			buzzer_flag=1;
+	}
+}

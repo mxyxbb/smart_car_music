@@ -64,7 +64,7 @@ void TIM16_IRQHandler(void)
 		
 		
 		button_ticks();	//�����¼�����
-		
+		music5_ticks();	
 		
 		//��Դ��������������һ�£�buzzer_flag��1
 		if(buzzer_flag)
@@ -183,7 +183,8 @@ void TIM16_IRQHandler(void)
 							case SANCHA:
 								if(sancha_timer<TASK2_SANCHA_TIME)
 								{
-									musicPlay();
+									//musicPlay();
+									music5_play_flag=1;
 									sancha_timer++;
 									pwm3=50;
 								}

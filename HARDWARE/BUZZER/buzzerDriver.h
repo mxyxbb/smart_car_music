@@ -14,6 +14,8 @@ void musicPlay(void);
 void music2Play(void);
 void music3Play(void);
 void music4Play(void);
+void music5_ticks(void);	
 	
+extern char music5_play_flag;
 extern u8 music_volume;
 #endif /* BUZZERDRIVER_H_ */

@@ -6,6 +6,7 @@
 #include "angle.h"
 #include "NIMING/data_transfer.h"
 #include "BALANCE/balance.h"
+#include "mymath.h"
 
 char str_main[255];
 u32 count_main;
@@ -36,6 +37,7 @@ int main(void)
   {
 		ANO_DT_Data_Exchange();
 		delayms(1);
+		
 //		sprintf(str_main, "err:%5d", motor1); 
 //    TFTSPI_P8X16Str(1, 1, str_main, u16PURPLE, u16BLACK);   // ×Ö·û´®ÏÔÊ¾
 //		start_or_stop();

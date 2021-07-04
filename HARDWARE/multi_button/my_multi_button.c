@@ -47,6 +47,7 @@ void my_button_init()
 void BTN1_SINGLE_Click_Handler(void* btn)
 {
 	buzzer_flag=1;
+	music5_play_flag=1;
 	if_key=1;
 	
 }
